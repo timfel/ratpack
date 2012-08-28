@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfRatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfRatPack",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
