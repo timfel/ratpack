@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfRatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfRatPack",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

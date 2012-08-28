@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Testing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPMockRequest",
+	"pools" : [
+		 ],
+	"super" : "HttpRequest",
+	"type" : "normal" }

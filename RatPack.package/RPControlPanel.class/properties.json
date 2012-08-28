@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "tfel 2/1/2012 16:05",
+	"instvars" : [
+		"applicationIndex" ],
+	"name" : "RPControlPanel",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

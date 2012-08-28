@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPApplication",
+	"pools" : [
+		 ],
+	"super" : "HttpService",
+	"type" : "normal" }

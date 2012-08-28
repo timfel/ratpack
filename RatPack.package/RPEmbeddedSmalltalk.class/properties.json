@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Templating",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPEmbeddedSmalltalk",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
