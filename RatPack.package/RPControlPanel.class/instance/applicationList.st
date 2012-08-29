@@ -1,4 +1,4 @@
 accessing
 applicationList
 
-	^ RPApplication services asArray sortBy: [:a :b | a name < b name]
+	^ RPApplication services asArray sort: [:a :b | a name < b name]

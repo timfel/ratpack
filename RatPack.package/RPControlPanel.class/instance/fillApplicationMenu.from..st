@@ -1,8 +1,8 @@
 menu
 fillApplicationMenu: aMenu from: aSpecificationList
 
-	aSpecificationList groupsOf: 4 atATimeDo: [:key :label :help :action |
-		label isSymbol
-			ifFalse: [aMenu add: (key ifNil: [label] ifNotNil: [label, ' (', key, ')']) action: action]
-			ifTrue: [aMenu addUpdating: label action: action].
+	aSpecificationList groupsOf: 4 atATimeDo: [:key :lbl :help :action |
+		lbl isSymbol
+			ifFalse: [aMenu add: (key ifNil: [lbl] ifNotNil: [lbl, ' (', key asString, ')']) action: action]
+			ifTrue: [aMenu addUpdating: lbl action: action].
 		 aMenu balloonTextForLastItem: help].
