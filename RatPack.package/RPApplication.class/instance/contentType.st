@@ -1,4 +1,4 @@
 accessing
 contentType
 
-	^ (self threadLocal: self class responseKey) contentType
+	^ self response contentType
