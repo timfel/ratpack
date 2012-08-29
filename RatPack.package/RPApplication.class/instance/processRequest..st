@@ -1,7 +1,7 @@
 routing
 processRequest: aHttpRequest
 	| response |
-	Processor activeProcess
+	self
 		threadLocal: self class requestKey put: aHttpRequest;
 		threadLocal: self class responseKey put: (HttpResponse fromString: '').
 	[response := self route: aHttpRequest] on: Error do: [:e | self serverError: e].

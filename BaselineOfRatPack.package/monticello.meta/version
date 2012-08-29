@@ -1,1 +1,1 @@
-(name 'BaselineOfRatPack-tfel.1' message 'initial baseline' id '2cc2591c-325f-4eef-9c1b-4d50690953c1' date '28 August 2012' time '2:16:34.992 pm' author 'tfel' ancestors () stepChildren ())
+(name 'BaselineOfRatPack-tfel.2' message 'move squeak install doit' id '3a97e6f1-98c9-441d-b186-74f26a415488' date '29 August 2012' time '10:02:18.406 am' author 'tfel' ancestors ((name 'BaselineOfRatPack-tfel.1' message 'initial baseline' id '2cc2591c-325f-4eef-9c1b-4d50690953c1' date '28 August 2012' time '2:16:34.992 pm' author 'tfel' ancestors () stepChildren ())) stepChildren ())
