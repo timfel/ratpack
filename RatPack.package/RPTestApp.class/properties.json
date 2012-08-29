@@ -1,14 +1,14 @@
 {
-	"category" : "RatPack",
+	"category" : "RatPack-Testing",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"dynamicEnv" ],
-	"name" : "RPApplication",
+		 ],
+	"name" : "RPTestApp",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "RPApplication",
 	"type" : "normal" }

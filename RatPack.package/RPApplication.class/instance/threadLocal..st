@@ -1,4 +1,4 @@
 private
 threadLocal: aSymbol
 	
-	^ Processor activeProcess environmentAt: aSymbol ifAbsent: []
+	^ self dynamicEnvironment at: aSymbol ifAbsent: []

@@ -1,6 +1,4 @@
 private
 threadLocal: aSymbol put: aValue
 	
-	^ Processor activeProcess
-		environmentAt: aSymbol
-		put: aValue
+	^ self dynamicEnvironment at: aSymbol put: aValue

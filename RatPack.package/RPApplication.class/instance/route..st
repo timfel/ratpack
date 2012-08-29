@@ -6,7 +6,7 @@ route: aHttpRequest
 				collect: [:pragma || rx |
 						rx := (pragma argumentAt: 1) copyReplaceAll: '%' with: '([^/]+)'.
 						pragma selector -> (RxMatcher forString: rx)])
-				sortBy: [:a :b | a value subexpressionCount <
+				sort: [:a :b | a value subexpressionCount <
 								b value subexpressionCount])
 				detect: [:assoc | assoc value matches: aHttpRequest url]
 				ifNone: [nil].
