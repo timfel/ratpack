@@ -14,5 +14,11 @@ baseline: spec
 		spec package: 'VB-Regex' with: [
 			spec repository: 'http://www.squeaksource.com/Regex' ].
 		spec package: 'RatPack' with: [
-			spec requires: #('VB-Regex').
-			spec postLoadDoIt: #squeakRegisterInWorldMenu]]..
+			spec requires: #('libraries').
+			spec postLoadDoIt: #squeakRegisterInWorldMenu].
+	spec
+				group: 'default' with: #('RatPack');
+				group: 'libraries' with: #('KomHttpServer' 'VB-Regex');
+				group: 'Tests' with: #('RatPack');
+				group: 'TravisCI' with: #('Tests')	];
+				yourself
