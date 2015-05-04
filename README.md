@@ -6,9 +6,8 @@ of KomHttpServer for Squeak Smalltalk.
 For licensing, see the file COPYRIGHT
 
 
-========================
-General workflow to:
-setup image:
+##General workflow to:
+###setup image:
 	1. download Image from SWA materials
 	2. clone git repository
 	3. +Package RatPack
@@ -23,7 +22,7 @@ setup image:
 			load
 			
 	
-commit changes:
+###commit changes:
 	1. monticello
 		1.1 select RatPack
 		1.2 save to filetree (git is read only)
@@ -33,10 +32,9 @@ commit changes:
 		1.2 change commit message & commit
 		1.3 push
 	
-pull changes:
+###pull changes:
 	1. git 
 		1. pull
 	2. monticello
 		2.1 open filetree
 		2.2 load
-========================
