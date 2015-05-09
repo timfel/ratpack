@@ -11,10 +11,10 @@ menuKeyMap
 		)
 		#(
 			$s runningString 'Start/stop the application' toggleRunning
-			$E 'Explore' 'Explore the application' exploreObject
+			$e 'Explore' 'Explore the application' exploreObject
 			$m 'Set mode' 'Set the application mode' setMode
 			$p 'Set port' 'Set the application port' setPort
 			$n 'Set name' 'Set the application name' setName
-			nil 'Remove' 'Remove the application' removeApplication
+			$r 'Remove' 'Remove the application' removeApplication 
 		)
 	)
