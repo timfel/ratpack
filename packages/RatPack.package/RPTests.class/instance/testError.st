@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testError
 	| result |
 	result := RPTestHelper get: '/raiseError' on: app.
