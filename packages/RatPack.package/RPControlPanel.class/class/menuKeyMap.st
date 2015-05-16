@@ -15,6 +15,7 @@ menuKeyMap
 			$m 'Set mode' 'Set the application mode' setMode
 			$p 'Set port' 'Set the application port' setPort
 			$n 'Set name' 'Set the application name' setName
-			$r 'Remove' 'Remove the application' removeApplication 
+			$x 'Remove' 'Remove the application' removeApplication 
+			$r 'Remove all' 'Remove all applications' removeAllApplications
 		)
 	)
