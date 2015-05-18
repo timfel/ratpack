@@ -1,4 +1,4 @@
 initialize
 checkClassForMethod: aString
-
-	^ self refClass canUnderstand: (aString asSymbol)
+	
+	^ self refClass canUnderstand: (('REST' , aString) asSymbol)

@@ -1,5 +1,5 @@
 registering models
 removeModel: aString
 	
-	self models removeKey: aString
+	self models removeKey: (aString asSymbol)
 	
