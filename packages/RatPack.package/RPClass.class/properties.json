@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"test" ],
+	"name" : "RPClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
