@@ -1,4 +1,4 @@
 accessing
 registeredClasses
 
-	^registeredClasses ifNil:[registeredClasses := IdentityDictionary new]
+	^ registeredClasses ifNil: [registeredClasses := IdentityDictionary new]

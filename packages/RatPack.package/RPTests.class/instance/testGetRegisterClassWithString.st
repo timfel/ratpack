@@ -1,6 +1,5 @@
 tests
 testGetRegisterClassWithString
-
 	| validString unvalidString1 unvalidString2 unvalidString3 |
 	validString := '<test1<a><b<c><d>>>'.
 	unvalidString1:= '<test2<a><b<c><d>>'.

@@ -12,4 +12,4 @@ route: aHttpRequest
 				ifNone: [nil].
 	match ifNil: [^ self notFound].
 	arguments := match value subexpressions allButFirst.
-	^ self perform: match key withArguments: arguments.
+	^ self perform: match key withArguments: arguments

@@ -1,4 +1,4 @@
 actions
 redirectBack
 
-	self redirectTo: self request referer.
+	self redirectTo: self request referer

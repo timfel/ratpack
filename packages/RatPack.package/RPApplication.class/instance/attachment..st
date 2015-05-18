@@ -1,6 +1,5 @@
 accessing
 attachment: aFilename
-
 	| attachmentHeader |
 	attachmentHeader := 'attachment; filename="', (FileDirectory localNameFor: aFilename), '"'.
 	self response headers: {'Content-Disposition' -> attachmentHeader}.

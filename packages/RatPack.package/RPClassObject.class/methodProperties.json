@@ -2,13 +2,13 @@
 	"class" : {
 		"newFromString:" : "MF 5/17/2015 16:14" },
 	"instance" : {
-		"asString" : "MF 5/17/2015 17:10",
-		"broken" : "MF 5/17/2015 17:24",
+		"asString" : "RS 5/18/2015 09:45",
+		"broken" : "RS 5/18/2015 09:32",
 		"broken:" : "MF 5/17/2015 17:47",
-		"children" : "MF 5/17/2015 16:32",
+		"children" : "RS 5/18/2015 09:45",
 		"children:" : "MF 5/16/2015 23:11",
 		"header" : "MF 5/16/2015 23:11",
 		"header:" : "MF 5/16/2015 23:11",
-		"initialize:" : "MF 5/17/2015 17:47",
-		"isValid" : "MF 5/17/2015 17:33",
-		"parseAttributeString:" : "MF 5/17/2015 17:47" } }
+		"initialize:" : "RS 5/18/2015 09:33",
+		"isValid" : "RS 5/18/2015 09:45",
+		"parseAttributeString:" : "RS 5/18/2015 09:40" } }

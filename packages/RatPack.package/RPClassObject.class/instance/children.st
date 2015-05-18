@@ -1,4 +1,4 @@
 accessing
 children
 
-	^ children ifNil:[ children := OrderedCollection new]
+	^ children ifNil: [children := OrderedCollection new]

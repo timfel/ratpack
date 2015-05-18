@@ -4,9 +4,9 @@
 	"instance" : {
 		"setUp" : "tfel 8/29/2012 12:15",
 		"testError" : "LB 5/11/2015 11:23",
-		"testGetRegisterClassWithString" : "MF 5/17/2015 17:55",
+		"testGetRegisterClassWithString" : "RS 5/18/2015 09:46",
 		"testIndex" : "LB 5/9/2015 11:39",
-		"testNotFound" : "LB 5/11/2015 13:10",
-		"testRedirect" : "LB 5/11/2015 11:11",
-		"testRegisterClassWithString" : "MF 5/17/2015 17:55",
+		"testNotFound" : "RS 5/18/2015 09:46",
+		"testRedirect" : "RS 5/18/2015 09:46",
+		"testRegisterClassWithString" : "RS 5/18/2015 09:46",
 		"testSimpleJSON" : "MF 5/16/2015 16:59" } }

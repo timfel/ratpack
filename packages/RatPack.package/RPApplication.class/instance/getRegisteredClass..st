@@ -1,4 +1,4 @@
 registering classes
 getRegisteredClass: aString
 	"implement"
-	^(self registeredClasses at: aString asSymbol)
+	^ (self registeredClasses at: aString asSymbol)

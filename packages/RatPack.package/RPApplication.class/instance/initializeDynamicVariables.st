@@ -1,4 +1,4 @@
 private
 initializeDynamicVariables
 
-	dynamicEnv := WeakIdentityKeyDictionary new.
+	dynamicEnv := WeakIdentityKeyDictionary new
