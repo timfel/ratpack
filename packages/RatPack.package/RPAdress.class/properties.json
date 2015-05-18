@@ -1,0 +1,17 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"street",
+		"city",
+		"houseNumber",
+		"country" ],
+	"name" : "RPAdress",
+	"pools" : [
+		 ],
+	"super" : "RPClass",
+	"type" : "normal" }

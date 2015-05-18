@@ -1,0 +1,18 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"male",
+		"age",
+		"adress",
+		"surname" ],
+	"name" : "RPPerson",
+	"pools" : [
+		 ],
+	"super" : "RPClass",
+	"type" : "normal" }
