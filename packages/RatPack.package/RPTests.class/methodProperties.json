@@ -3,10 +3,10 @@
 		 },
 	"instance" : {
 		"setUp" : "tfel 8/29/2012 12:15",
+		"testCreateModel" : "MF 5/18/2015 13:09",
 		"testError" : "LB 5/11/2015 11:23",
-		"testGetRegisterClassWithString" : "RS 5/18/2015 09:46",
 		"testIndex" : "LB 5/9/2015 11:39",
 		"testNotFound" : "RS 5/18/2015 09:46",
 		"testRedirect" : "RS 5/18/2015 09:46",
-		"testRegisterClassWithString" : "RS 5/18/2015 09:46",
+		"testRegisterModel" : "MF 5/18/2015 14:46",
 		"testSimpleJSON" : "MF 5/16/2015 16:59" } }

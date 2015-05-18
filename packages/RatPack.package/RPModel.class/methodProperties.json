@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"new:on:with:" : "MF 5/18/2015 13:50" },
+	"instance" : {
+		"attributes" : "MF 5/18/2015 13:52",
+		"attributes:" : "MF 5/18/2015 13:51",
+		"checkClassForMethod:" : "MF 5/18/2015 17:04",
+		"initialize:on:with:" : "MF 5/18/2015 17:06",
+		"isValid" : "MF 5/18/2015 17:05",
+		"modelName" : "MF 5/18/2015 13:59",
+		"modelName:" : "MF 5/18/2015 13:59",
+		"refClass" : "MF 5/18/2015 13:56",
+		"refClass:" : "MF 5/18/2015 13:56" } }
