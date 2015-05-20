@@ -3,7 +3,8 @@
 		 },
 	"instance" : {
 		"setUp" : "tfel 8/29/2012 12:15",
-		"testCreateModel" : "MF 5/18/2015 21:19",
+		"testCreateModel" : "MF 5/19/2015 11:52",
+		"testCreateObjectByModel" : "MF 5/19/2015 13:54",
 		"testError" : "LB 5/11/2015 11:23",
 		"testGetValuesThroughModels" : "MF 5/18/2015 21:42",
 		"testIndex" : "LB 5/9/2015 11:39",

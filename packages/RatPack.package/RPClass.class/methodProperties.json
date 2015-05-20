@@ -1,8 +1,9 @@
 {
 	"class" : {
-		 },
+		"newWith:" : "MF 5/19/2015 12:03" },
 	"instance" : {
 		"RESTtest" : "MF 5/18/2015 20:54",
 		"callRESTMethod:" : "MF 5/18/2015 20:50",
-		"checkClassForMethod:" : "MF 5/18/2015 20:52",
-		"getRESTAttributes:" : "MF 5/18/2015 20:57" } }
+		"checkClassForMethod:" : "MF 5/19/2015 11:49",
+		"getRESTAttributes:" : "MF 5/18/2015 20:57",
+		"initialize:" : "MF 5/19/2015 13:53" } }

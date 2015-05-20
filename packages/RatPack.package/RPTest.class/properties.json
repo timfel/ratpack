@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"children",
-		"header",
-		"broken" ],
-	"name" : "RPClassObject",
+		"variable" ],
+	"name" : "RPTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPClass",
 	"type" : "normal" }

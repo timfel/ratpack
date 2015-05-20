@@ -1,4 +1,4 @@
 REST
 checkClassForMethod: aString
 
-	^ self refClass canUnderstand: (('REST',  aString) asSymbol)
+	^ self refClass canUnderstand: ('REST',  aString) asSymbol

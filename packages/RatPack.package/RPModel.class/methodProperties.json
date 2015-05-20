@@ -4,10 +4,11 @@
 	"instance" : {
 		"attributes" : "MF 5/18/2015 13:52",
 		"attributes:" : "MF 5/18/2015 13:51",
-		"checkClassForMethod:" : "MF 5/18/2015 21:10",
+		"checkClassForMethod:" : "MF 5/19/2015 11:48",
+		"createObject:" : "MF 5/19/2015 11:34",
 		"getObjects" : "MF 5/18/2015 21:38",
 		"initialize:on:with:" : "MF 5/18/2015 17:06",
-		"isValid" : "MF 5/18/2015 21:12",
+		"isValid" : "MF 5/19/2015 11:47",
 		"modelName" : "MF 5/18/2015 13:59",
 		"modelName:" : "MF 5/18/2015 13:59",
 		"refClass" : "MF 5/18/2015 13:56",
