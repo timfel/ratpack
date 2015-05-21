@@ -3,13 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"IDCounter" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"test",
-		"variable" ],
-	"name" : "RPTest",
+		"ObjectId" ],
+	"name" : "RPBasicClass",
 	"pools" : [
 		 ],
-	"super" : "RPBasicClass",
+	"super" : "Object",
 	"type" : "normal" }

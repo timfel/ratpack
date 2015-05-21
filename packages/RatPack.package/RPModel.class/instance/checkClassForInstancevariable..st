@@ -1,10 +1,13 @@
 initialize
 checkClassForInstancevariable: aString
 
-	[self refClass 
+	(aString = 'ObjectId') ifTrue:
+		[self error: 'ObjectId is a model variable. Forbidden as attribute name.'].
+	
+	self refClass 
 			instVarIndexFor: aString asString 
-			ifAbsent: [self error: 'Instance variable not found']. ^true] 
-	on: Error do: [^false]
+			ifAbsent: [^false ]. 
+	^true
 
 	
 	
