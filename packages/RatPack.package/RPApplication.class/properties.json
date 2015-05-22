@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"dynamicEnv",
-		"registeredClasses" ],
+		"registeredClasses",
+		"pragmas" ],
 	"name" : "RPApplication",
 	"pools" : [
 		 ],
