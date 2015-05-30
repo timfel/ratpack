@@ -6,12 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"registeredClasses",
-		"pragmas",
-		"models",
-		"dynamicEnv" ],
-	"name" : "RPApplication",
+		"attributes",
+		"modelName",
+		"refClass" ],
+	"name" : "RPModel",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "Object",
 	"type" : "normal" }

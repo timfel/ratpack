@@ -6,12 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"registeredClasses",
-		"pragmas",
-		"models",
-		"dynamicEnv" ],
-	"name" : "RPApplication",
+		"test",
+		"variable" ],
+	"name" : "RPTest",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "RPBasicClass",
 	"type" : "normal" }

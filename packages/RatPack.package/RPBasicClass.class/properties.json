@@ -3,15 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"IDCounter" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"registeredClasses",
-		"pragmas",
-		"models",
-		"dynamicEnv" ],
-	"name" : "RPApplication",
+		"ObjectId" ],
+	"name" : "RPBasicClass",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "Object",
 	"type" : "normal" }

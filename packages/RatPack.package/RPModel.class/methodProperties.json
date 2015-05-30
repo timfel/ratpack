@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"new:on:with:" : "MF 5/18/2015 13:50" },
+	"instance" : {
+		"attributes" : "MF 5/18/2015 13:52",
+		"attributes:" : "MF 5/18/2015 13:51",
+		"checkClassForInstancevariable:" : "MF 5/21/2015 16:04",
+		"checkJSON:" : "MF 5/21/2015 17:54",
+		"createObject:" : "MF 5/21/2015 17:55",
+		"getObject:" : "MF 5/21/2015 18:02",
+		"getObjects" : "MF 5/21/2015 18:02",
+		"getValue:fromObject:" : "MF 5/21/2015 18:02",
+		"initialize:on:with:" : "MF 5/18/2015 17:06",
+		"isValid" : "MF 5/20/2015 22:47",
+		"modelName" : "MF 5/18/2015 13:59",
+		"modelName:" : "MF 5/18/2015 13:59",
+		"refClass" : "MF 5/18/2015 13:56",
+		"refClass:" : "MF 5/18/2015 13:56" } }
