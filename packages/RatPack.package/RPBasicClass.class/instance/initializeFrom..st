@@ -1,5 +1,4 @@
 initialize
 initializeFrom: aJSON
-
-	super initialize.
-	self privateId: (self class getUniqueID)
+	"TODO: write initialize"
+	super initialize

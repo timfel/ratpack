@@ -1,4 +1,0 @@
-accessing
-getId
-
-	^ObjectId

@@ -3,10 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"IDCounter" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ObjectId" ],
+		"objectId" ],
 	"name" : "RPBasicClass",
 	"pools" : [
 		 ],

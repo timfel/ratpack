@@ -1,4 +1,4 @@
 accessing
-models
-
-	^ models ifNil: [models := IdentityDictionary new]
+models 
+	
+	^models ifNil: [ models := IdentityDictionary new]

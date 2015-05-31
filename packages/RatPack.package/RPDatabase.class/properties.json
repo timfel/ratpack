@@ -6,12 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"pragmas",
-		"models",
-		"database",
-		"dynamicEnv" ],
-	"name" : "RPApplication",
+		"modelDictinary",
+		"idDictionary" ],
+	"name" : "RPDatabase",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "Object",
 	"type" : "normal" }

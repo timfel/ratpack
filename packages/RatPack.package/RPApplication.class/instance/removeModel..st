@@ -1,5 +1,6 @@
 registering models
-removeModel: aString
+removeModel: aModelname
 	
-	self models removeKey: (aString asSymbol)
+	self models removeKey: aModelname.
+	self database removeModel: aModelname 
 	
