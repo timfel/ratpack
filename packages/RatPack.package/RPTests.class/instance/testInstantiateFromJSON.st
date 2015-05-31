@@ -1,11 +1,12 @@
 tests
-testCheckCorrectJSON
-	| attributes validator json|
+testInstantiateFromJSON
+
+	| attributes object json|
 	"correct JSON"
 	attributes := OrderedCollection new. 
 	attributes add: (Association key: 'test' asSymbol value: 20 ).
 	attributes add: (Association key: 'variable' asSymbol value: 'green' ).
 	json := Json newWithConstructors: attributes.
-	
-	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	self assert: (validator checkJSON: json).
+	object := RPTest newWith: json.
+	self assert: (object instVarNamed: 'test') equals: 20. 
+	self assert: (object instVarNamed: 'variable') equals: 'green'

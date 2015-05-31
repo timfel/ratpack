@@ -1,4 +1,7 @@
 initialize
 initializeFrom: aJSON
-	"TODO: write initialize"
+	| keys |
+	keys := aJSON ctorMap keys.
+	keys do: [:each | 
+		self instVarNamed: each put: (aJSON ctorMap at: each)].
 	super initialize
