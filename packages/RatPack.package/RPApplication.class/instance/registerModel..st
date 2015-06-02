@@ -1,4 +1,4 @@
-registering models
+model handling
 registerModel: aRPModel
 	
 	(aRPModel isValid) 

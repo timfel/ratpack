@@ -1,4 +1,4 @@
 accessing
 attributes
 
-	^ attributes ifNil: [attributes := IdentityDictionary new]
+	^ attributes ifNil: [attributes := Array new]
