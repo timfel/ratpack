@@ -9,6 +9,7 @@
 		"testCheckJsonWithToManyAttributes" : "MF 5/31/2015 12:34",
 		"testCreateObjectByModel" : "MF 5/31/2015 13:21",
 		"testCreateObjectsWithDefaultValues" : "mm 6/3/2015 21:44",
+		"testCreateObjectsWithOverwriteDefaultValues" : "MF 6/4/2015 09:35",
 		"testError" : "LB 5/11/2015 11:23",
 		"testGetObject" : "MF 5/31/2015 11:57",
 		"testIndex" : "LB 5/9/2015 11:39",
