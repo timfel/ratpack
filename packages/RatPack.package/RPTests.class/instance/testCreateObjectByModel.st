@@ -1,11 +1,11 @@
 tests
 testCreateObjectByModel
-	| json attributes |
-	attributes := OrderedCollection new. 
-	attributes add: (Association key: 'test' asSymbol value: 20 ).
-	attributes add: (Association key: 'variable' asSymbol value: 'green' ).
-	json := Json newWithConstructors: attributes.
+	| jsonObject string stream |
+
+	string := ('{"test":"20", "variable":"green" }' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	jsonObject := Json readFrom: stream.
 
 	app registerModel: 'testmodel' on: RPTest with: #( 'test' 'variable' ).
-	self assert: ([(app addObject: json from: 'testmodel'). true]on: Warning  do:[false]).
+	self assert: ([(app addObject: jsonObject from: 'testmodel'). true]on: Warning  do:[false]).
 

@@ -13,10 +13,10 @@ testCreateObjectsWithDefaultValues
 	model := app getRegisteredModel: modelName.
 	self assert: (
 		[app addObject: 
-				(Json newWithConstructors: (OrderedCollection new)) 
+				(JsonObject new) 
 				from: modelName. true.] on: Warning do: [false]).
 
-	object := model createObject: (Json newWithConstructors: (OrderedCollection new)).
+	object := model createObject: (JsonObject new).
 	self assert: (object instVarNamed: 'test') equals: value1.
 	self assert: (object instVarNamed: 'variable') equals: value2.
-	self assert: (object instVarNamed: 'variable') = 'not tur' equals: false.
+	self assert: (object instVarNamed: 'variable') = 'foobar' equals: false.

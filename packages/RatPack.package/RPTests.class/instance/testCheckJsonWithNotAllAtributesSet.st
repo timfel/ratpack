@@ -1,9 +1,10 @@
 tests
 testCheckJsonWithNotAllAtributesSet
-	| attributes json validator|
+	| validator json string stream|
 	"Json with not all attributes set"
-	attributes := OrderedCollection new. 
-	attributes add: (Association key: 'test' asSymbol value: 20 ).
-	json := Json newWithConstructors: attributes.
+	string := ('{"test":"20" }' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	json := Json readFrom: stream.
+
 	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	self assert: ((validator checkJSON: json) = false).
+	self assert: ((validator checkJson: json) = false).

@@ -1,7 +1,7 @@
 object accessing
-createObject: aJSON
+createObject: aJsonObject
 	| newObject |
-	(self checkJSON: aJSON) ifFalse: [self notify: 'Invalide Json! Could not create Object on ' , self modelName].
-	newObject := self refClass newWith: aJSON.
+	(self checkJson: aJsonObject) ifFalse: [self notify: 'Invalide JsonObject! Could not create Object on ' , self modelName].
+	newObject := self refClass newWith: aJsonObject.
 	newObject setDefaults: self defaultValues.
 	^newObject

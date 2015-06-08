@@ -1,13 +1,12 @@
 tests
 testCheckJsonWithToManyAttributes
 	
-	| attributes json validator|
+	| validator json string stream |
+	"Json with to many attributes"
+
+	string := ('{"test":"20","variable":"green","notthere":"42"}' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	json := Json readFrom: stream.
 
 	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	"Json with to many attributes"
-	attributes := OrderedCollection new. 
-	attributes add: (Association key: 'test' asSymbol value: 20 ).
-	attributes add: (Association key: 'variable' asSymbol value: 20 ).
-	attributes add: (Association key: 'test2' asSymbol value: 20 ).
-	json := Json newWithConstructors: attributes.
-	self assert: ((validator checkJSON: json) = false).
+	self assert: ((validator checkJson: json) = false).

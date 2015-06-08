@@ -1,12 +1,12 @@
 tests
-testPutObjectOnApplication
-	| modelName jsonstring url objects result |
+testAddObjectWithValuesOnApplication
+	| modelName jsonstring objects result |
 	result := false.
 	modelName := 'testmodel'.
 	app registerModel: modelName on: RPTest with: #( 'test' 'variable').
-	url := '/api/testmodel'.
+	
 	jsonstring := '{"test":"foo", "variable":"bar"},'.
-	RPTestHelper put: url on: app content: jsonstring.
+	app addObjectViaString: jsonstring from: modelName. 
 	
 	objects :=  app database modelDictionary at: modelName asSymbol.
 	objects do: [ :each | 
