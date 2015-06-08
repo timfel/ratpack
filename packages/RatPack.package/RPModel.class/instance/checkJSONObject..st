@@ -1,0 +1,2 @@
+object accessing
+checkJSONObject: aDictionary

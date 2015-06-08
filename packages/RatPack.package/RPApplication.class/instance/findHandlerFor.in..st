@@ -1,10 +1,9 @@
 routing
-findHandlerFor: aHttpRequest in: pragmas
+findHandlerFor: aHttpRequest in: routes
+	| result matcher |
+	matcher := RxMatcher forString: aHttpRequest url.
 	
-	^ ((pragmas collect: [:pragma | | rx |
-					rx := (pragma argumentAt: 1) copyReplaceAll: '%' with: ' ([^/]+)'.
-					pragma selector -> (RxMatcher forString: rx)])
-				sort: [:a :b | a value subexpressionCount < 
-								b value subexpressionCount])
-				detect: [:assoc | assoc value matches: aHttpRequest url]
-				ifNone: []
+	result := routes detect: [:route | matcher matches: route key]
+		ifNone: []. 
+
+	^ result 

@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"pragmas",
 		"models",
 		"database",
-		"dynamicEnv" ],
+		"dynamicEnv",
+		"routes" ],
 	"name" : "RPApplication",
 	"pools" : [
 		 ],
