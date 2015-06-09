@@ -2,7 +2,7 @@ tests
 testAddObject
 
 	| jsonObject string stream|
-	string := ('{"test":"20", "variable":"green" }' asOrderedCollection).
+	string := ('{"test":"20","variable":"green" }' asOrderedCollection).
 	stream := ReadStream on:  string from: 1 to: (string size).
 	jsonObject := Json readFrom: stream.
 

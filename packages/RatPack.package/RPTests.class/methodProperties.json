@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "tfel 8/29/2012 12:15",
-		"testAddObject" : "MF 6/8/2015 15:45",
+		"testAddObject" : "LB 6/9/2015 22:07",
 		"testAddObjectWithValuesOnApplication" : "MF 6/8/2015 15:24",
 		"testCheckCorrectJSON" : "MF 6/8/2015 15:38",
 		"testCheckJsonWithNotAllAtributesSet" : "MF 6/8/2015 15:40",
@@ -13,8 +13,7 @@
 		"testCreateObjectsWithOverwriteDefaultValues" : "MF 6/8/2015 15:56",
 		"testError" : "LB 5/11/2015 11:23",
 		"testGetAllModelInstances" : "LB 6/9/2015 02:34",
-		"testGetModelInstance" : "mm 6/9/2015 16:25",
-		"testGetObject" : "mm 6/9/2015 21:34",
+		"testGetModelInstance" : "LB 6/9/2015 22:10",
 		"testIndex" : "LB 5/9/2015 11:39",
 		"testInstantiateFromJson" : "LB 6/8/2015 23:11",
 		"testNotFound" : "RS 5/18/2015 09:46",
