@@ -16,4 +16,4 @@ testGetObject
 					on: Warning do: [true]). 
 	self assert: ([object := app getObjectAsJsonStringfrom: modelName at: 1. true]
 			on: Warning do: [false]). 
-	self assert: (jsonObject :=Json readFrom: (ReadStream on: (object := app getAllObjectsAsJsonStringFrom: modelName) from: 0 to: object size)) size equals: 2.
+	self assert: (jsonObject :=Json readFrom: (ReadStream on: (object := app getAllObjectsAsJsonStringFrom: modelName) from: 0 to: object size)) size equals: 1. "An Inhalt rankommen"
