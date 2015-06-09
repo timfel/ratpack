@@ -1,6 +1,7 @@
 routing
 processRequest: aHttpRequest
 	| response |
+	"self halt."
 	self
 		threadLocal: self class requestKey put: aHttpRequest;
 		threadLocal: self class responseKey put: (HttpResponse fromString: '').
