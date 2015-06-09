@@ -7,7 +7,7 @@ route: aHttpRequest
 	match := self findHandlerFor: aHttpRequest in: methodRoutes.
 	match ifNil: [^ self notFound].
 
-	arguments := (match key findTokens: '/') allButFirst 
+	"args needed as array by self perfom: withArguments:"
+	arguments := (aHttpRequest url findTokens: '/') allButFirst asArray
 			ifEmpty: [^ self perform: match value].
-
 	^ self perform: match value withArguments: arguments

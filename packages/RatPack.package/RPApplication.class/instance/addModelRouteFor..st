@@ -1,6 +1,10 @@
 model handling
 addModelRouteFor: anRPModelName
+
+	"#(#get: #post: #put: #delete:)"
+	| url |
+	url := '/api/', anRPModelName.
 	
-	#(#get: #put: #post: #delete:) do: [:method | | url |
-		url := '/api/', anRPModelName.
-		(self routesFor: method) add: (url -> #'handleApiRoute')]
+	(self routesFor: #get:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'getInstanceOf:at:').
+	(self routesFor: #get:) add: (('/api/', anRPModelName) -> #'getAllInstancesOf:').
+	(self routesFor: #put:) add: (('/api/', anRPModelName) -> #'putObjectIntoDatabase:')
