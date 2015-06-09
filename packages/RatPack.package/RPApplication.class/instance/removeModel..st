@@ -1,4 +1,4 @@
-registering models
+model handling
 removeModel: aModelname
 	
 	self models removeKey: aModelname.

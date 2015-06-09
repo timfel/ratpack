@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"addObject:at:" : "MF 5/31/2015 13:03",
+		"getAllObjectsFrom:" : "mm 6/9/2015 15:41",
 		"getNextIdForModel:" : "MF 5/31/2015 13:35",
+		"getObject:from:" : "mm 6/9/2015 16:17",
 		"idDictionary" : "MF 5/31/2015 10:53",
 		"idDictionary:" : "MF 5/31/2015 10:50",
 		"modelDictionary" : "MF 5/31/2015 11:40",

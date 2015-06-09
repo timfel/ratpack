@@ -1,7 +1,7 @@
 initialize
-initialize: aString on: aClass with: aDictionary
+initialize: aString on: aClass with: anArray
 
 	super initialize.
 	self modelName: aString.
 	self refClass: aClass.
-	self attributes: aDictionary
+	self attributes: anArray

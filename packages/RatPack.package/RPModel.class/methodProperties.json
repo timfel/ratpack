@@ -1,16 +1,24 @@
 {
 	"class" : {
-		"new:on:with:" : "MF 5/18/2015 13:50" },
+		"new:on:with:" : "mm 6/1/2015 20:44" },
 	"instance" : {
-		"attributes" : "MF 5/18/2015 13:52",
+		"attributes" : "mm 6/1/2015 20:45",
 		"attributes:" : "MF 5/18/2015 13:51",
 		"checkClassForInstancevariable:" : "MF 5/31/2015 10:56",
-		"checkJSON:" : "MF 5/31/2015 12:25",
+		"checkDefault:" : "mm 6/3/2015 21:21",
+		"checkDefaultKeys:" : "mm 6/1/2015 20:57",
+		"checkJSON:" : "mm 6/3/2015 21:31",
 		"checkJSONObject:" : "MF 5/31/2015 12:23",
-		"createObject:" : "MF 5/31/2015 12:36",
-		"initialize:on:with:" : "MF 5/18/2015 17:06",
+		"checkJson:" : "MF 6/8/2015 15:31",
+		"createObject:" : "MF 6/8/2015 15:29",
+		"defaultValues" : "mm 6/1/2015 20:54",
+		"getDefaultValueFor:" : "mm 6/1/2015 21:04",
+		"initialize:on:with:" : "mm 6/1/2015 20:45",
 		"isValid" : "MF 5/20/2015 22:47",
 		"modelName" : "MF 5/18/2015 13:59",
 		"modelName:" : "MF 5/18/2015 13:59",
 		"refClass" : "MF 5/18/2015 13:56",
-		"refClass:" : "MF 5/18/2015 13:56" } }
+		"refClass:" : "MF 5/18/2015 13:56",
+		"removeDefaultValues:" : "mm 6/1/2015 21:14",
+		"setDefaultValue:" : "mm 6/1/2015 20:54",
+		"setDefaultValues:" : "mm 6/1/2015 20:56" } }

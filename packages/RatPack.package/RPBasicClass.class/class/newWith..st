@@ -1,6 +1,5 @@
 initialize
-newWith: aJSON
-
+newWith: aJsonObject
 	^self basicNew 
-		initializeFrom: aJSON;
+		initializeFrom: aJsonObject;
 	yourself 

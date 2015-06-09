@@ -1,11 +1,10 @@
 tests
 testCheckCorrectJSON
-	| attributes validator json|
+	| validator json string stream|
 	"correct JSON"
-	attributes := OrderedCollection new. 
-	attributes add: (Association key: 'test' asSymbol value: 20 ).
-	attributes add: (Association key: 'variable' asSymbol value: 'green' ).
-	json := Json newWithConstructors: attributes.
+	string := ('{"test":"20" , "variable":"green" }' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	json := Json readFrom: stream.
 	
 	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	self assert: (validator checkJSON: json).
+	self assert: (validator checkJson: json).
