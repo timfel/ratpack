@@ -12,8 +12,8 @@ testGetObject
 		with: #('test' 'variable' ).
 	app addObject: jsonObject from: modelName. 
 	app addObject: jsonObject from: modelName. 
-	self assert: ([object := app getObject: 3 from: modelName. false]
+	self assert: ([object := app getObjectAsJsonStringfrom: modelName at: 3. false]
 					on: Warning do: [true]). 
-	self assert: ([object := app getObject: 1 from: modelName. true]
+	self assert: ([object := app getObjectAsJsonStringfrom: modelName at: 1. true]
 			on: Warning do: [false]). 
-	self assert: (object := app getAllObjectsFrom: modelName) size equals: 2
+	self assert: (jsonObject :=Json readFrom: (ReadStream on: (object := app getAllObjectsAsJsonStringFrom: modelName) from: 0 to: object size)) size equals: 2.
