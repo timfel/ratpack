@@ -1,0 +1,4 @@
+logging
+disableLogging 
+
+	loggingIsEnabled := false

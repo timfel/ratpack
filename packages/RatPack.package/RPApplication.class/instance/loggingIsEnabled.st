@@ -1,0 +1,4 @@
+logging
+loggingIsEnabled 
+	
+	^ loggingIsEnabled
