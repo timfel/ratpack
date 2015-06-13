@@ -1,12 +1,10 @@
-tests
+tests - json
 testInstantiateFromJson
 
-	| object jsonObject string stream |
+	| object jsonObject  |
 	"correct JSON"
-	string := ('{"test":"20", "variable":"green" }' asOrderedCollection).
-	stream := ReadStream on:  string from: 1 to: (string size).
-	jsonObject := Json readFrom: stream.
-	
+	 jsonObject := RPTestHelper createJsonObjectFrom:  '{"test":"20", "variable":"green" }'.
+
 	object := RPTest newWith: jsonObject.
 	self assert: (object instVarNamed: 'test') equals: '20'. 
 	self assert: (object instVarNamed: 'variable') equals: 'green'

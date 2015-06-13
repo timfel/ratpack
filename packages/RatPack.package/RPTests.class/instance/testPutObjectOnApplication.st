@@ -1,4 +1,4 @@
-tests
+test - routing
 testPutObjectOnApplication
 	| modelName jsonstring url objects result |
 	result := false.

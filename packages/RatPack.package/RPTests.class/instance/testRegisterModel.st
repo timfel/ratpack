@@ -1,4 +1,4 @@
-tests
+test - models
 testRegisterModel
 
 	self assert: ( [app registerModel: '' on: RPTest with: #( 'test' ). false]on: Warning do:[true] ).

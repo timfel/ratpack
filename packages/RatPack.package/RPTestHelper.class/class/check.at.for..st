@@ -1,4 +1,4 @@
-functions
+helper functions
 check: anObject at: anInstanceName for: aValue
 
 	[((anObject instVarNamed: anInstanceName) = (aValue))

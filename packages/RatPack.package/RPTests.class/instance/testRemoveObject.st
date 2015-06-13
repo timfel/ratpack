@@ -1,11 +1,9 @@
-tests
+test - objects
 testRemoveObject
 
-	| jsonObject string stream |
+	| jsonObject |
 
-	string := ('{"test":"20", "variable":"green" }' asOrderedCollection).
-	stream := ReadStream on:  string from: 1 to: (string size).
-	jsonObject := Json readFrom: stream.
+	 jsonObject := RPTestHelper createJsonObjectFrom:  '{"test":"20" , "variable":"green" }'.
 
 	app registerModel: 'testmodel' on: RPTest with: #('test' 'variable').
 	app addObject: jsonObject from: 'testmodel'.

@@ -1,4 +1,4 @@
-tests
+test - routing
 testNotFound
 	| result |
 	result := RPTestHelper get: '/thisDoesNotExist' on: app.
