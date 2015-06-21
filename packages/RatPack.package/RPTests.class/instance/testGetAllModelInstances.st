@@ -1,4 +1,4 @@
-test - routing
+test - REST operations
 testGetAllModelInstances
 
 	| modelName jsonstring url result |

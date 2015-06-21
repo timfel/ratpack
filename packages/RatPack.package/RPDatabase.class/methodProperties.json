@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addObject:at:" : "MF 5/31/2015 13:03",
+		"addObject:at:" : "PK 6/21/2015 20:30",
 		"getAllObjectsFrom:" : "mm 6/9/2015 15:41",
 		"getNextIdForModel:" : "MF 5/31/2015 13:35",
 		"getObject:from:" : "mm 6/9/2015 16:17",
@@ -12,6 +12,6 @@
 		"modelDictionary:" : "MF 5/31/2015 11:40",
 		"registerModel:" : "MF 5/31/2015 11:51",
 		"removeModel:" : "MF 5/31/2015 11:24",
-		"removeObject:from:" : "MF 5/31/2015 14:02",
+		"removeObject:from:" : "PK 6/21/2015 19:29",
 		"updateObject:at:" : "PK 6/20/2015 21:02",
-		"updateObject:at:withID:" : "PK 6/21/2015 15:22" } }
+		"updateObject:at:withID:" : "PK 6/21/2015 20:30" } }

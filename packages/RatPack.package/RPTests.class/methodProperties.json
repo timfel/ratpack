@@ -12,6 +12,7 @@
 		"testCreateObjectByModel" : "MF 6/13/2015 22:25",
 		"testCreateObjectsWithDefaultValues" : "MF 6/8/2015 15:51",
 		"testCreateObjectsWithOverwriteDefaultValues" : "MF 6/13/2015 22:33",
+		"testDeleteObject" : "PK 6/21/2015 19:18",
 		"testError" : "LB 5/11/2015 11:23",
 		"testGetAllModelInstances" : "LB 6/9/2015 02:34",
 		"testGetComplexModelInstance" : "MF 6/13/2015 22:53",
@@ -29,4 +30,4 @@
 		"testRemoveObject" : "MF 6/13/2015 22:30",
 		"testSetDefaultValuesForModels" : "mm 6/1/2015 21:09",
 		"testSimpleJSON" : "LB 5/20/2015 13:34",
-		"testUpdateSingleObject" : "PK 6/21/2015 15:16" } }
+		"testUpdateSingleObject" : "PK 6/21/2015 20:28" } }

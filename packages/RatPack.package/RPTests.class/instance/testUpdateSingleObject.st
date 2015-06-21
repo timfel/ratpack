@@ -1,4 +1,4 @@
-test - routing
+test - REST operations
 testUpdateSingleObject
 
         | modelName jsonString urlToTestmodel insertedObject urlToFirstInsertedObject updatedJsonString |

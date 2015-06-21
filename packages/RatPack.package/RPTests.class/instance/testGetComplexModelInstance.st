@@ -1,4 +1,4 @@
-test - routing
+test - REST operations
 testGetComplexModelInstance
  
         | modelName jsonString url result otherURL |
