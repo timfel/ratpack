@@ -7,4 +7,7 @@ addModelRouteFor: anRPModelName
 	
 	(self routesFor: #get:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'getObjectAsJsonStringFrom:at:').
 	(self routesFor: #get:) add: (('/api/', anRPModelName) -> #'getAllObjectsAsJsonStringFrom:').
-	(self routesFor: #put:) add: (('/api/', anRPModelName) -> #'putObjectIntoDatabase:')
+	(self routesFor: #put:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'updateObjectInDatabase:withID:').
+	(self routesFor: #put:) add: (('/api/', anRPModelName) -> #'putObjectIntoDatabase:').
+	
+	

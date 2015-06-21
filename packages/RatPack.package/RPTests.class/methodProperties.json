@@ -28,4 +28,5 @@
 		"testRemoveModel" : "MF 5/31/2015 13:54",
 		"testRemoveObject" : "MF 6/13/2015 22:30",
 		"testSetDefaultValuesForModels" : "mm 6/1/2015 21:09",
-		"testSimpleJSON" : "LB 5/20/2015 13:34" } }
+		"testSimpleJSON" : "LB 5/20/2015 13:34",
+		"testUpdateSingleObject" : "PK 6/21/2015 15:16" } }
