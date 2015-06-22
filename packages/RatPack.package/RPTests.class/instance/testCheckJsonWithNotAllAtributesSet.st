@@ -1,8 +1,10 @@
-tests - json
+tests
 testCheckJsonWithNotAllAtributesSet
-	| validator jsonObject |
+	| validator json string stream|
 	"Json with not all attributes set"
-	jsonObject := RPTestHelper createJsonObjectFrom:  '{"test":"20" }'.
+	string := ('{"test":"20" }' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	json := Json readFrom: stream.
 
 	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	self assert: ((validator checkJson: jsonObject) = false).
+	self assert: ((validator checkJson: json) = false).

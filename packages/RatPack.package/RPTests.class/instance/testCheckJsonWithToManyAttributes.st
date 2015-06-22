@@ -1,9 +1,12 @@
-tests - json
+tests
 testCheckJsonWithToManyAttributes
 	
-	| validator jsonObject |
+	| validator json string stream |
 	"Json with to many attributes"
-	 jsonObject := RPTestHelper createJsonObjectFrom: '{"test":"20","variable":"green","notthere":"42"}'.
+
+	string := ('{"test":"20","variable":"green","notthere":"42"}' asOrderedCollection).
+	stream := ReadStream on:  string from: 1 to: (string size).
+	json := Json readFrom: stream.
 
 	validator := RPModel new: 'test' on: RPTest with: #( 'test' 'variable' ).
-	self assert: ((validator checkJson: jsonObject) = false).
+	self assert: ((validator checkJson: json) = false).

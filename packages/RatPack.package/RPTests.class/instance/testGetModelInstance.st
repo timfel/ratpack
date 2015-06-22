@@ -1,4 +1,4 @@
-test - routing
+tests
 testGetModelInstance
  
         | modelName jsonString url result otherURL |

@@ -1,4 +1,4 @@
-test - routing
+tests
 testGetAllModelInstances
 
 	| modelName jsonstring url result |

@@ -1,4 +1,4 @@
-test - models
+tests
 testRemoveModel
 	
 	app registerModel: 'test' on: RPTest with: #( 'test' 'variable' ).

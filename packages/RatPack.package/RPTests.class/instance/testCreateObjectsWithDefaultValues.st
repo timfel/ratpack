@@ -1,4 +1,4 @@
-test - objects
+tests
 testCreateObjectsWithDefaultValues
 
 	| dictionary modelName model value1 value2 object |

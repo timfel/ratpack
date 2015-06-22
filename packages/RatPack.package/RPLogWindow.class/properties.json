@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"models",
-		"database",
-		"dynamicEnv",
-		"routes",
-		"loggingIsEnabled",
-		"logWindow" ],
-	"name" : "RPApplication",
+		 ],
+	"name" : "RPLogWindow",
 	"pools" : [
 		 ],
-	"super" : "HttpService",
+	"super" : "TranscriptStream",
 	"type" : "normal" }

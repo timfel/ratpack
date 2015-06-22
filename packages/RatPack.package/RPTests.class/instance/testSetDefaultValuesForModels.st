@@ -1,4 +1,4 @@
-test - models
+tests
 testSetDefaultValuesForModels
 
 	| dictionary modelName model value |

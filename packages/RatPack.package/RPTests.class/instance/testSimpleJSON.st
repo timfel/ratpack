@@ -1,4 +1,4 @@
-test - routing
+tests
 testSimpleJSON
 	| result |
 	result := RPTestHelper get: '/simpleJSON' on: app.

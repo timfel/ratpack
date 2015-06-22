@@ -1,4 +1,4 @@
-test - routing
+tests
 testRedirect
 	| result |
 	result := RPTestHelper get: '/redirect' on: app.
