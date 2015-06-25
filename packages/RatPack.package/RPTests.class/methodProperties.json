@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "LB 6/10/2015 02:38",
+		"setUp" : "LB 6/21/2015 20:52",
 		"tearDown" : "LB 6/10/2015 00:48",
 		"testAddObject" : "MF 6/13/2015 22:24",
 		"testAddObjectWithValuesOnApplication" : "MF 6/8/2015 15:24",
