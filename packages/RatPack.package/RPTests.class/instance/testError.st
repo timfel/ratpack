@@ -1,4 +1,4 @@
-tests
+test - routing
 testError
 	| result |
 	result := RPTestHelper get: '/raiseError' on: app.

@@ -5,5 +5,5 @@ logRequest: aHttpRequest andResponse: aHttpResponse
 	(self loggingIsEnabled)
 		ifTrue: [requestMessage := self buildRequestLogMessageFrom: aHttpRequest.
 				responseMessage := self buildResponseLogMessageFrom: aHttpResponse.
-				logWindow show: (requestMessage, ' ', responseMessage); cr]
+				Transcript show: requestMessage, ' ', responseMessage; cr]
 		

@@ -1,4 +1,4 @@
-tests
+test - routing
 testIndex
 	| result |
 	result := RPTestHelper get: '/index' on: app.

@@ -1,5 +1,7 @@
 logging
 getIpFrom: aHttpRequest 
 
-	[^ aHttpRequest remoteAddress asIpString] on: MessageNotUnderstood do: [^ 'unknown IP']
+	| addressBytes |
+	addressBytes := aHttpRequest remoteAddress.
+	[^ addressBytes asIpString] on: MessageNotUnderstood do: [^ 'unknown IP']
 	

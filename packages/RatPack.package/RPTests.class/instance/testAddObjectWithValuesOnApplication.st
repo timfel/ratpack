@@ -1,4 +1,4 @@
-tests
+test - objects
 testAddObjectWithValuesOnApplication
 	| modelName jsonstring objects result |
 	result := false.
