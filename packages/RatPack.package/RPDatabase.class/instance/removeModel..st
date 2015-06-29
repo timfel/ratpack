@@ -1,4 +1,4 @@
 models handling
 removeModel: aModelname
 
-	self modelDictinary removeKey: (aModelname asSymbol)
+	self modelDictionary removeKey: (aModelname asSymbol)

@@ -5,4 +5,4 @@ sendJson: aJsonString with: anURIString
 		status: 200;
 		contentType: 'application/json';
 		body:  aJsonString contents;
-		headers: {'Location' -> anURIString asString copy. 'URI' -> anURIString asString copy}.
+		headers: {'Location' -> anURIString asString copy. 'URI' -> anURIString asString copy. 'server' -> self name}.
