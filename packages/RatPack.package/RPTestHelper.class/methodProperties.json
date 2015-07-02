@@ -2,6 +2,10 @@
 	"class" : {
 		"check:at:for:" : "MF 6/8/2015 11:50",
 		"createJsonObjectFrom:" : "MF 6/13/2015 22:14",
+		"delete:on:" : "PK 6/21/2015 16:05",
+		"delete:on:content:" : "PK 6/21/2015 16:02",
+		"delete:on:headers:" : "PK 6/21/2015 16:04",
+		"delete:on:headers:content:" : "PK 6/21/2015 16:02",
 		"get:on:" : "tfel 2/27/2012 10:46:33.994",
 		"get:on:headers:" : "tfel 2/27/2012 10:46:29.45",
 		"httpRequestFor:method:headers:content:" : "tfel 2/27/2012 14:46:24.232",
@@ -10,6 +14,8 @@
 		"post:on:headers:content:" : "tfel 2/27/2012 15:20:55.687",
 		"put:on:content:" : "tfel 2/27/2012 11:06:10.663",
 		"put:on:headers:content:" : "tfel 2/27/2012 11:06:20.798",
-		"request:on:method:headers:content:" : "tfel 2/27/2012 15:27:50.878" },
+		"request:on:method:headers:content:" : "tfel 2/27/2012 15:27:50.878",
+		"update:on:content:" : "PK 6/20/2015 19:45",
+		"update:on:headers:content:" : "PK 6/20/2015 19:45" },
 	"instance" : {
 		 } }

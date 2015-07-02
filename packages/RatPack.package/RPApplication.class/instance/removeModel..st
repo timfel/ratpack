@@ -1,6 +1,6 @@
 model handling
 removeModel: aModelname
 	
-	self models removeKey: aModelname.
+	self models removeKey: aModelname asSymbol.
 	self database removeModel: aModelname 
 	

@@ -1,4 +1,4 @@
-test - routing
+test - REST operations
 testPutComplexObjectOnApplication
 	| modelName jsonObject jsonstring url objects result |
 	result := false.
