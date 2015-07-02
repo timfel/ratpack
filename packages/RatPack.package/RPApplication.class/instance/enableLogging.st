@@ -1,4 +1,5 @@
 logging
 enableLogging 
 
-	loggingIsEnabled := true
+	loggingIsEnabled := true.
+	logWindow open
