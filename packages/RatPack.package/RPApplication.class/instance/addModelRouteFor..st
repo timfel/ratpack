@@ -5,11 +5,8 @@ addModelRouteFor: anRPModelName
 	| url |
 	url := '/api/', anRPModelName.
 	
-	(self routesFor: #get:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'getObjectAsJsonStringFrom:at:').
-	(self routesFor: #get:) add: (('/api/', anRPModelName) -> #'getAllObjectsAsJsonStringFrom:').
+	(self routesFor: #get:) add: ((url, '/([^/]+)') -> #'getObjectAsJsonStringFrom:at:').
+	(self routesFor: #get:) add: ((url) -> #'getAllObjectsAsJsonStringFrom:').
+	(self routesFor: #put:) add: ((url) -> #'putObjectIntoDatabase:').
+	(self routesFor: #delete:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'removeObject:from:').
 	(self routesFor: #put:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'updateObjectInDatabase:withID:').
-	(self routesFor: #put:) add: (('/api/', anRPModelName) -> #'putObjectIntoDatabase:').
-	(self routesFor: #delete:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'removeObject:from:')
-	
-	
-	
