@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"connect" : "MF 7/4/2015 16:37",
+		"connectTo:on:at:as:with:" : "MF 7/4/2015 16:39",
+		"connection" : "MF 7/4/2015 16:45",
+		"connectionArguments" : "MF 7/4/2015 16:51",
+		"connectionArguments:" : "MF 7/4/2015 17:26",
+		"convertModelToSQLString:" : "MF 7/4/2015 16:11",
+		"createTableFor:" : "MF 7/4/2015 17:37" } }

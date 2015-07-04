@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"close" : "MF 7/4/2015 15:27",
+		"connect" : "MF 7/4/2015 15:26",
+		"connectTo:on:as:with:" : "MF 7/4/2015 15:55",
+		"connectTo:on:at:as:with:" : "MF 7/4/2015 15:59",
+		"createObject:" : "MF 7/4/2015 15:29",
+		"createTableFor:" : "MF 7/4/2015 15:38",
+		"deleteObject:" : "MF 7/4/2015 15:30",
+		"deleteObject:from:" : "MF 7/4/2015 15:39",
+		"dropTable:" : "MF 7/4/2015 15:38",
+		"loadObjects:" : "MF 7/4/2015 15:39",
+		"loadTable:" : "MF 7/4/2015 15:38",
+		"persist:" : "MF 7/4/2015 15:31",
+		"persist:relatedTo:" : "MF 7/4/2015 15:41",
+		"updateTable:" : "MF 7/4/2015 15:39" } }

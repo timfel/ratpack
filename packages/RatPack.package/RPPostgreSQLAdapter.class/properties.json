@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connection",
+		"connectionArguments" ],
+	"name" : "RPPostgreSQLAdapter",
+	"pools" : [
+		 ],
+	"super" : "RPDatabaseAdapter",
+	"type" : "normal" }

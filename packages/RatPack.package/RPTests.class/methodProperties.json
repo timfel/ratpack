@@ -12,6 +12,7 @@
 		"testCreateObjectByModel" : "MF 6/13/2015 22:25",
 		"testCreateObjectsWithDefaultValues" : "MF 6/8/2015 15:51",
 		"testCreateObjectsWithOverwriteDefaultValues" : "MF 6/13/2015 22:33",
+		"testCreateTable" : "MF 7/4/2015 17:50",
 		"testDeleteObject" : "PK 6/21/2015 19:18",
 		"testError" : "LB 7/4/2015 14:14",
 		"testGetAllModelInstances" : "LB 6/9/2015 02:34",
