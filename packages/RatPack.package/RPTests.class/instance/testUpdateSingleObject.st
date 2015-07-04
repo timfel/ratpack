@@ -15,5 +15,4 @@ testUpdateSingleObject
 	  RPTestHelper put: urlToFirstInsertedObject  on: app content: updatedJsonString.
    
         insertedObject := RPTestHelper get: urlToFirstInsertedObject  on: app.
-	Transcript show: insertedObject contents contents.
         self assert: insertedObject contents contents = updatedJsonString.
