@@ -10,6 +10,10 @@ baseline: spec
 		spec package: 'RatPack' with: [spec requires: #('KomHttpServer')]].
 
 	spec for: #squeak do: [
+		spec package: 'Cryptography' with: [
+			spec repository: 'http://www.squeaksource.com/Cryptography' ].
+		spec package: 'PostgresV2' with: [
+			spec repository: 'http://www.squeaksource.com/PostgresV2' ].
 		spec package: 'VB-Regex' with: [
 			spec repository: 'http://www.squeaksource.com/Regex' ].
 		spec package: 'JSON' with: [
@@ -19,7 +23,7 @@ baseline: spec
 			spec postLoadDoIt: #squeakRegisterInWorldMenu].
 	spec
 				group: 'default' with: #('RatPack');
-				group: 'libraries' with: #('KomHttpServer' 'VB-Regex' 'JSON');
+				group: 'libraries' with: #('KomHttpServer' 'VB-Regex' 'JSON' 'Cryptography' 'PostgresV2');
 				group: 'Tests' with: #('RatPack');
 				group: 'TravisCI' with: #('Tests')	];
 				yourself
