@@ -9,6 +9,8 @@
 		"convertAssociationToSQLString:" : "MF 7/7/2015 09:22",
 		"convertModelToSQLString:" : "MF 7/7/2015 09:10",
 		"createTableFor:" : "MF 7/7/2015 13:16",
-		"deleteObject:from:" : "MF 7/7/2015 13:43",
+		"deleteObject:from:" : "MF 7/7/2015 14:27",
 		"dropTableFor:" : "MF 7/7/2015 13:16",
-		"persist:from:" : "MF 7/7/2015 13:37" } }
+		"loadObjects:" : "MF 7/7/2015 14:59",
+		"persist:from:" : "MF 7/7/2015 13:37",
+		"update:with:from:" : "MF 7/7/2015 14:37" } }

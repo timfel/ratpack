@@ -5,8 +5,8 @@ addModelRouteFor: aRPModelClass
 	| url |
 	url := '/api/', aRPModelClass tableName.
 	
-	(self routesFor: #get:) add: ((url, '/([^/]+)') -> #'getObjectAsJsonStringFrom:at:').
-	(self routesFor: #get:) add: ((url) -> #'getAllObjectsAsJsonStringFrom:').
-	(self routesFor: #put:) add: ((url) -> #'putObjectIntoDatabase:').
-	(self routesFor: #delete:) add: (('/api/', aRPModelClass tableName  , '/([^/]+)') -> #'removeObject:from:').
-	(self routesFor: #put:) add: (('/api/', aRPModelClass tableName , '/([^/]+)') -> #'updateObjectInDatabase:withID:').
+	(self routesFor: #get:) add: ((url, '/([^/]+)') -> #'getFromRequest:at:').
+	(self routesFor: #get:) add: ((url) -> #'getAllFromRequest:').
+	(self routesFor: #put:) add: ((url) -> #'putFromRequest:').
+	(self routesFor: #delete:) add: (('/api/', aRPModelClass tableName  , '/([^/]+)') -> #'deleteFromRequest:from:').
+	(self routesFor: #put:) add: (('/api/', aRPModelClass tableName , '/([^/]+)') -> #'updateFromRequest:with:').

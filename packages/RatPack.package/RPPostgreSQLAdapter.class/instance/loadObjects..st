@@ -1,0 +1,2 @@
+object handling
+loadObjects: aRPModelClass

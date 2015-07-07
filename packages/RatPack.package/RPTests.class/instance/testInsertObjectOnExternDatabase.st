@@ -1,5 +1,5 @@
 test - database - postgresql
-testInsertObjectIntoOnExternDatabase
+testInsertObjectOnExternDatabase
 
 	app database: RPPostgreSQLAdapter new.
 	app database createTableFor: RPTestModel.

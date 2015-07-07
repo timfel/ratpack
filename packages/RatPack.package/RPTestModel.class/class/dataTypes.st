@@ -1,6 +1,6 @@
 needed methods
 dataTypes 
 
-^ Dictionary newFrom: { 'var1'-> #( 'VARCHAR(30) PRIMARY KEY' 'FirstModel').
-							'var2'-> #( 'INT'  10 ) }
+^ Dictionary newFrom: { 'var1'-> #(  'INT PRIMARY KEY' 1).
+							'var2'-> #('VARCHAR(30)' 'Max Mustermann' ) }
 	

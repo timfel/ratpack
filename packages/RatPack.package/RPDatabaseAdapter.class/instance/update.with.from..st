@@ -1,4 +1,4 @@
 object handling
-update: aObject with: anId from: aModel
+update: anObject with: anId from: aRPModelClass
 
 	self subclassResponsibility 

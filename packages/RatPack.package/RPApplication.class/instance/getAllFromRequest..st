@@ -1,5 +1,5 @@
 object handling
-getAllObjectsAsJsonStringFrom: aRPModelClass
+getAllFromRequest: aRPModelClass
  
         | objects string |
         objects := self database getAllObjectsFrom: aRPModelClass.

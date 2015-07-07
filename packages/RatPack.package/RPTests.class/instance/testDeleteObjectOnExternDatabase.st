@@ -2,5 +2,4 @@ test - database - postgresql
 testDeleteObjectOnExternDatabase
 
 	app database: RPPostgreSQLAdapter new.
-	app database createTableFor: RPTestModel.
-	app deleteObject: 'Hans' from: RPTestModel
+	app deleteObject: 1 from: RPTestModel

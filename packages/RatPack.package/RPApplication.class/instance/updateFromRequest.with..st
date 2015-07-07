@@ -1,5 +1,5 @@
 object handling
-updateObjectInDatabase: aRPModelClass with: anId
+updateFromRequest: aRPModelClass with: anId
  
       | updatedObject jsonString |
 	jsonString := (self threadLocal: RPApplication requestKey) rawPutContents.

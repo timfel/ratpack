@@ -1,5 +1,5 @@
 object handling
-putObjectIntoDatabase: aRPModelClass
+putFromRequest: aRPModelClass
 	
 	| jsonString |
 	jsonString := (self threadLocal: RPApplication requestKey) rawPutContents.
