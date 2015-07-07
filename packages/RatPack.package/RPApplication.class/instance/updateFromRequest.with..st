@@ -1,7 +1,8 @@
 object handling
-updateFromRequest: aRPModelClass with: anId
+updateFromRequest: aRPModelname with: anId
  
-      | updatedObject jsonString |
+      | updatedObject jsonString aRPModelClass|
+	aRPModelClass := self getRegisteredModel: aRPModelname.
 	jsonString := (self threadLocal: RPApplication requestKey) rawPutContents.
 	updatedObject := aRPModelClass createObject: jsonString.
 

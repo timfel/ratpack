@@ -1,8 +1,8 @@
 object handling
-getNextIdForModel: aModelname
+getNextIdForModel: aRPModelClass
 
-	[self idDictionary at: aModelname asSymbol ]
+	[self idDictionary at: aRPModelClass name asSymbol ]
 		on: KeyNotFound 
-		do:[ self idDictionary at: aModelname asSymbol put: 1].
-	self idDictionary at: aModelname asSymbol put: ((self idDictionary at: aModelname asSymbol) + 1).
-	^((self idDictionary at: aModelname asSymbol) - 1)
+		do:[ self idDictionary at: aRPModelClass name asSymbol put: 1].
+	self idDictionary at: aRPModelClass name asSymbol put: ((self idDictionary at: aRPModelClass name asSymbol) + 1).
+	^((self idDictionary at: aRPModelClass name asSymbol) - 1)

@@ -3,15 +3,14 @@
 		 },
 	"instance" : {
 		"createTableFor:" : "MF 7/7/2015 10:20",
+		"deleteObject:from:" : "MF 7/7/2015 17:07",
 		"dropTableFor:" : "MF 7/7/2015 10:20",
-		"getAllObjectsFrom:" : "mm 6/9/2015 15:41",
-		"getNextIdForModel:" : "MF 5/31/2015 13:35",
-		"getObject:from:" : "mm 6/9/2015 16:17",
+		"getNextIdForModel:" : "MF 7/7/2015 17:06",
 		"idDictionary" : "MF 5/31/2015 10:53",
 		"idDictionary:" : "MF 5/31/2015 10:50",
+		"loadObject:from:" : "MF 7/7/2015 17:18",
+		"loadObjects:" : "MF 7/7/2015 17:32",
 		"modelDictionary" : "MF 5/31/2015 11:40",
 		"modelDictionary:" : "MF 5/31/2015 11:40",
-		"persist:from:" : "MF 7/7/2015 10:49",
-		"removeObject:from:" : "PK 6/21/2015 19:29",
-		"updateObject:at:" : "LB 7/4/2015 13:59",
-		"updateObject:at:withID:" : "LB 7/4/2015 13:58" } }
+		"persist:from:" : "MF 7/7/2015 17:29",
+		"update:with:from:" : "MF 7/7/2015 17:12" } }

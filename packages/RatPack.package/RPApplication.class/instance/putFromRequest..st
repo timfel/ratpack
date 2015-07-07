@@ -1,6 +1,9 @@
 object handling
-putFromRequest: aRPModelClass
+putFromRequest: aRPModelname
 	
-	| jsonString |
+	| jsonString aRPModelClass|
+	aRPModelClass := self getRegisteredModel: aRPModelname.
 	jsonString := (self threadLocal: RPApplication requestKey) rawPutContents.
-	self addObjectViaString: jsonString from: aRPModelClass
+	self persistObjectBy: jsonString from: aRPModelClass.
+	
+	

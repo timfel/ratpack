@@ -1,7 +1,8 @@
 object handling
-getFromRequest: aRPModelClass at: anID
+getFromRequest: aRPModelname at: anID
  
-        | object JsonString|
-        object := self database getObject: anID from: aRPModelClass.
-        JsonString := aRPModelClass createJsonFor: object.  
-        ^ self sendJson: JsonString with: 'model/api'
+      | object aJsonString aRPModelClass|
+	aRPModelClass := self getRegisteredModel: aRPModelname.
+      object := self database getObject: anID from: aRPModelClass.
+      aJsonString := aRPModelClass createJsonFor: object.  
+       ^ self sendJson: aJsonString with: 'model/api'

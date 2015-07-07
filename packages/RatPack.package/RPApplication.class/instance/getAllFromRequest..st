@@ -1,7 +1,8 @@
 object handling
-getAllFromRequest: aRPModelClass
+getAllFromRequest: aRPModelname
  
-        | objects string |
+        | objects string aRPModelClass |
+	aRPModelClass := self getRegisteredModel: aRPModelname.
         objects := self database loadObjects: aRPModelClass.
         string := '{"data":['.
         objects withIndexDo: [:each :index |
