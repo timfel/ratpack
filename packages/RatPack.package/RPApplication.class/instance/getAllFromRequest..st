@@ -2,7 +2,7 @@ object handling
 getAllFromRequest: aRPModelClass
  
         | objects string |
-        objects := self database getAllObjectsFrom: aRPModelClass.
+        objects := self database loadObjects: aRPModelClass.
         string := '{"data":['.
         objects withIndexDo: [:each :index |
                                 (index ==  1)

@@ -7,6 +7,6 @@ dataTypes
 
 	Example:
 	^ Dictionary newFrom: { 'var1'->#( 'VARCHAR(30)'   default) .
-							'var2'->#( 'INT' ) }
+							'var2'->#( 'INT PRIMARY KEY' ) }
 	"
 	self subclassResponsibility

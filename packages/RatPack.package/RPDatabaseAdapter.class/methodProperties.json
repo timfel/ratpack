@@ -6,6 +6,7 @@
 		"createTableFor:" : "MF 7/7/2015 10:03",
 		"deleteObject:from:" : "MF 7/4/2015 15:39",
 		"dropTableFor:" : "MF 7/7/2015 10:03",
+		"loadObject:from:" : "MF 7/7/2015 15:15",
 		"loadObjects:" : "MF 7/7/2015 14:59",
 		"loadTable:" : "MF 7/7/2015 10:11",
 		"persist:from:" : "MF 7/7/2015 10:42",

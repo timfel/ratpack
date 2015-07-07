@@ -2,6 +2,6 @@ test - models
 testTestModelCreateSpecifiedObject
 
 	|  object |
-	object := RPTestModel createObject: '{"var1":"specified"}'.
-	self assert: 'specified' equals:  (object instVarNamed: 'var1').
-	self assert:  10 equals: (object instVarNamed: 'var2') .
+	object := RPTestModel createObject: '{"var2":"Andreas Anders"}'.
+	self assert: 1 equals:  (object instVarNamed: 'var1').
+	self assert:  'Andreas Anders' equals: (object instVarNamed: 'var2') .
