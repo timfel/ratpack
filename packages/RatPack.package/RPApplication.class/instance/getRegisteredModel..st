@@ -1,4 +1,4 @@
 model handling
 getRegisteredModel: aString
 
-	^ (self models at: (aString asSymbol))
+	^ (self modelClasses at: (aString asSymbol))

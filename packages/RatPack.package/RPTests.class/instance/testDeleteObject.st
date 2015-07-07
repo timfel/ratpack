@@ -1,16 +1,15 @@
 test - REST operations
 testDeleteObject
  
-        | modelName jsonString url result urlToInsertedElement |
-        modelName := 'testmodel'.
-        app registerModel: modelName on: RPTest with: #( 'test' 'variable').
-        url := '/api/testmodel'.
+      | modelName jsonString url result urlToInsertedElement |
+      modelName := 'testmodel'.
+      app registerModel: modelName on: RPTest with: #( 'test' 'variable').
+      url := '/api/testmodel'.
         
-	  jsonString := '{"test":"foo","variable":"bar"}'.
-        RPTestHelper put: url on: app content: jsonString.
+	jsonString := '{"test":"foo","variable":"bar"}'.
+      RPTestHelper put: url on: app content: jsonString.
  
-        urlToInsertedElement := '/api/testmodel/1'.
-        RPTestHelper delete: urlToInsertedElement on: app.
+      urlToInsertedElement := '/api/testmodel/1'.
+	RPTestHelper delete: urlToInsertedElement on: app.
 
      	result := RPTestHelper get: urlToInsertedElement on: app.
-        self assert: result status = #notFound.

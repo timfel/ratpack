@@ -1,13 +1,12 @@
 object handling
-getAllObjectsAsJsonStringFrom: aModelName
+getAllObjectsAsJsonStringFrom: aRPModelClass
  
-        | objects string jsonString|
-        objects := self database getAllObjectsFrom: aModelName.
+        | objects string |
+        objects := self database getAllObjectsFrom: aRPModelClass.
         string := '{"data":['.
-        objects do: [:each |
-                                (string == '{"data":[')
+        objects withIndexDo: [:each :index |
+                                (index ==  1)
                                         ifFalse: [string := string , ','] .
-                                jsonString:= each asJsonStringWithAttributes: (self getRegisteredModel: aModelName) attributes.
-                                string := string, jsonString].
+                                string := string , aRPModelClass createJsonFor: each].
         string := string,']}'.
         ^self sendJson: string with: 'model/api'

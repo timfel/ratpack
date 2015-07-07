@@ -1,15 +1,10 @@
 model handling
-registerModel: aRPModel
+registerModel: aRPModelClass
 	
-	(aRPModel isValid) 
-		ifFalse: [self notify: 'Invalid Model. Could not register model: ' , aRPModel modelName , '  to App!'. ^self].	
+	(aRPModelClass validateRefClass) 
+		ifFalse: [self notify: 'Invalid ModelClass. Could not register modelclass: ' , aRPModelClass modelName , '  to App!'. ^self].	
+	
+	self addModelClass: aRPModelClass
 
-	self models at: (aRPModel modelName asSymbol) 
-					ifAbsent: [ 	self models at: (aRPModel modelName asSymbol) put: (aRPModel). 
-								self database registerModel: aRPModel.
-								self addModelRouteFor: aRPModel modelName. 
-								^self].
-
-	self notify:  'Model already exists! ' , aRPModel modelName.
 
 	

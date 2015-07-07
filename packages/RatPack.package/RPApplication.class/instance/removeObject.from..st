@@ -1,3 +1,4 @@
 object handling
-removeObject: id from: aModelname
-	self database removeObject: id from: aModelname 
+removeObject: id from: aRPModelClass
+	
+	self database deleteObject: id from: aRPModelClass 

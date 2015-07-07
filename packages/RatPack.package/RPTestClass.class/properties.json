@@ -1,13 +1,14 @@
 {
-	"category" : "RatPack",
+	"category" : "RatPack-Testing",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "RPModel",
+		"var1",
+		"var2" ],
+	"name" : "RPTestClass",
 	"pools" : [
 		 ],
 	"super" : "Object",

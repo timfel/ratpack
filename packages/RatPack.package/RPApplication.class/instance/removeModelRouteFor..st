@@ -1,6 +1,6 @@
 model handling
-removeModelRouteFor: anRPModelName
+removeModelRouteFor: aRPModelClass
 
 	self class requestMethods do: [:method | | routes |
 				routes := self routesFor: method.
-				routes removeAllSuchThat: [:route | (route key includesSubString: anRPModelName)]]
+				routes removeAllSuchThat: [:route | (route key includesSubString: aRPModelClass tableName)]]

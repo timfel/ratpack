@@ -1,4 +1,4 @@
 object handling
-addObject: aJsonObject from: aModelname
+addObject: aJson from: aRPModelClass
 
-	self database addObject: ((self getRegisteredModel: aModelname) createObject: aJsonObject) at: aModelname
+	self database addObject:  (aRPModelClass createObject: aJson)
