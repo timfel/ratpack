@@ -1,6 +1,7 @@
 table handling
-createTableFor: aModel
+createTableFor: aRPModelClass
 
 	self connection startup.
-	self connection execute: ('CREATE TABLE ', aModel tableName, ' (',  (self convertModelToSQLString: aModel) , ')').
+	self connection execute: 
+			('CREATE TABLE ', (aRPModelClass tableName), ' (' ,  (self convertModelToSQLString: aRPModelClass) , ')' ).
 	self connection terminate

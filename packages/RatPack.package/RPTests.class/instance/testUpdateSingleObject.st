@@ -1,4 +1,4 @@
-test - REST operations
+test - REST operations - old
 testUpdateSingleObject
 
         | modelName jsonString urlToTestmodel insertedObject urlToFirstInsertedObject updatedJsonString |

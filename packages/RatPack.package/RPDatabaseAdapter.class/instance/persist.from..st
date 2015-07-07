@@ -1,4 +1,4 @@
 object handling
-persist: anObject relatedTo: aModel
+persist: anObject from: aRPModelClass
 
 	self subclassResponsibility  

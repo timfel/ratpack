@@ -1,4 +1,4 @@
 table handling
-dropTable: aModel
+dropTableFor: aRPModelClass
 
 	self subclassResponsibility 

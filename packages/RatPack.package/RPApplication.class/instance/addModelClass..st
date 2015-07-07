@@ -1,5 +1,10 @@
 model handling
 addModelClass: aRPModelClass
 
-	self modelClasses at: (aRPModelClass name asSymbol ) put: aRPModelClass.
-	self notify:  'Model already exists! ' , aRPModelClass modelName.
+(aRPModelClass validateRefClass) 
+	ifTrue: [
+		self database createTableFor: aRPModelClass.
+		self addModelRouteFor: aRPModelClass.
+		self modelClasses at: (aRPModelClass name asSymbol ) put: aRPModelClass.]
+	ifFalse: [
+		self notify: 'Could not register modelclass to application!']

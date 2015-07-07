@@ -1,4 +1,4 @@
-test - REST operations
+test - REST operations - old
 testDeleteObject
  
       | modelName jsonString url result urlToInsertedElement |

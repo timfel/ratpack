@@ -1,4 +1,11 @@
 table handling
-convertModelToSQLString: aModel
+convertModelToSQLString: aRPModelClass
 
-	^ 'foo_id VARCHAR(20) PRIMARY KEY, bar INT'
+	| SQLSubString first |
+	SQLSubString := ''.
+	first := true.
+	aRPModelClass dataTypes associationsDo: [:each |
+						(first ) ifFalse: [SQLSubString := SQLSubString , ', ']. 
+						first := false.
+						SQLSubString := SQLSubString , (self convertAssociationToSQLString: each)].
+	^ SQLSubString

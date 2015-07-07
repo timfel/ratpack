@@ -1,4 +1,4 @@
-test - REST operations
+test - REST operations - old
 testPutComplexObjectOnApplication
 	| modelName jsonObject jsonstring url objects result |
 	result := false.

@@ -1,6 +1,6 @@
-as yet unclassified
+needed methods
 dataTypes 
 
-^ Dictionary newFrom: { 'var1'-> #( 'VARCHAR(30)' 'FirstModel').
+^ Dictionary newFrom: { 'var1'-> #( 'VARCHAR(30) PRIMARY KEY' 'FirstModel').
 							'var2'-> #( 'INT'  10 ) }
 	

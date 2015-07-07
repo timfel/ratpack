@@ -1,4 +1,4 @@
-test - REST operations
+test - REST operations - old
 testGetModelInstance
  
         | modelName jsonString url result otherURL |

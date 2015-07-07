@@ -1,4 +1,4 @@
-tests - json
+test - json - old
 testCheckJsonWithNotAllAtributesSet
 	| validator jsonObject |
 	"Json with not all attributes set"

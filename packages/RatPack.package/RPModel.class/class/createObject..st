@@ -3,7 +3,7 @@ createObject: aJson
 
 	| newObject aJsonObject |
 	(self validateJson: aJson) 
-		ifFalse: [self notify: 'Invalide Json! Could not create Object on ' , self modelName].
+		ifFalse: [self notify: 'Invalide Json! Could not create Object on ' , self name].
 	
 	aJsonObject := Json readFrom: ( ReadStream on:  aJson asOrderedCollection  from: 1 to: (aJson asOrderedCollection size)).	
 	newObject := self refClass new.

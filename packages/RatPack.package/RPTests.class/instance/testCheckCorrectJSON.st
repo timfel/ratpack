@@ -1,4 +1,4 @@
-tests - json
+test - json - old
 testCheckCorrectJSON
 	| validator jsonObject |
 	"correct JSON"

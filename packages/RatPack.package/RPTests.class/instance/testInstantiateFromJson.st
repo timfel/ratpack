@@ -1,4 +1,4 @@
-tests - json
+test - json - old
 testInstantiateFromJson
 
 	| object jsonObject  |

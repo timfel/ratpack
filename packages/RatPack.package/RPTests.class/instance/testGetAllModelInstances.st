@@ -1,4 +1,4 @@
-test - REST operations
+test - REST operations - old
 testGetAllModelInstances
 
 	| modelName jsonstring url result |

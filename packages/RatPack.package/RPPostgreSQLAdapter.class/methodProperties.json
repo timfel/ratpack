@@ -6,5 +6,9 @@
 		"connection" : "MF 7/4/2015 16:45",
 		"connectionArguments" : "MF 7/4/2015 16:51",
 		"connectionArguments:" : "MF 7/4/2015 17:26",
-		"convertModelToSQLString:" : "MF 7/4/2015 16:11",
-		"createTableFor:" : "MF 7/4/2015 17:37" } }
+		"convertAssociationToSQLString:" : "MF 7/7/2015 09:22",
+		"convertModelToSQLString:" : "MF 7/7/2015 09:10",
+		"createTableFor:" : "MF 7/7/2015 13:16",
+		"deleteObject:from:" : "MF 7/7/2015 13:43",
+		"dropTableFor:" : "MF 7/7/2015 13:16",
+		"persist:from:" : "MF 7/7/2015 13:37" } }

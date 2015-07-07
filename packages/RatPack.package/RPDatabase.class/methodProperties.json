@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addObject:at:" : "LB 7/4/2015 13:58",
+		"createTableFor:" : "MF 7/7/2015 10:20",
+		"dropTableFor:" : "MF 7/7/2015 10:20",
 		"getAllObjectsFrom:" : "mm 6/9/2015 15:41",
 		"getNextIdForModel:" : "MF 5/31/2015 13:35",
 		"getObject:from:" : "mm 6/9/2015 16:17",
@@ -10,8 +11,7 @@
 		"idDictionary:" : "MF 5/31/2015 10:50",
 		"modelDictionary" : "MF 5/31/2015 11:40",
 		"modelDictionary:" : "MF 5/31/2015 11:40",
-		"registerModel:" : "MF 5/31/2015 11:51",
-		"removeModel:" : "mm 6/21/2015 20:54",
+		"persist:from:" : "MF 7/7/2015 10:49",
 		"removeObject:from:" : "PK 6/21/2015 19:29",
 		"updateObject:at:" : "LB 7/4/2015 13:59",
 		"updateObject:at:withID:" : "LB 7/4/2015 13:58" } }

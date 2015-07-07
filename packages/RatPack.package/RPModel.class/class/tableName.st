@@ -1,5 +1,7 @@
 accesing
 tableName
-	"Override if other for individual name."
+	"Override with:
+		^ self refClass name asString
+	or with other for individual name."
 
-	^ self refClass name asString
+	^ self subclassResponsibility 

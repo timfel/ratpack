@@ -1,4 +1,4 @@
 object handling
-update: aObject with: aId from: aModel
+update: aObject with: anId from: aModel
 
 	self subclassResponsibility 

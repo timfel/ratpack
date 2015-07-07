@@ -1,4 +1,4 @@
 table handling
-createTableFor: aModel
+createTableFor: aRPModelClass
 
 	self subclassResponsibility 

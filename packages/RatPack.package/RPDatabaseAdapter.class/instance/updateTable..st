@@ -1,4 +1,4 @@
 table handling
-updateTable: aModel
+updateTable: aRPModelClass
 
 	self subclassResponsibility 

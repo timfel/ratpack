@@ -1,4 +1,4 @@
-as yet unclassified
+needed methods
 refClass
 
 	^ RPTestClass
