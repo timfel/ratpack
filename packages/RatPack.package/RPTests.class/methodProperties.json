@@ -22,7 +22,7 @@
 		"testNotFound" : "RS 5/18/2015 09:46",
 		"testObjectIndexing" : "MF 7/8/2015 22:01",
 		"testPutComplexObjectOnApplication" : "MF 6/13/2015 22:52",
-		"testPutObjectOnApplication" : "MF 7/7/2015 19:15",
+		"testPutObjectOnApplication" : "MF 7/8/2015 22:09",
 		"testRedirect" : "RS 5/18/2015 09:46",
 		"testRegisterModelClass" : "MF 7/7/2015 09:48",
 		"testRemoveModelClass" : "MF 7/7/2015 10:24",
@@ -38,4 +38,4 @@
 		"testTestModelValidateJsonWithToManyAttributes" : "MF 7/7/2015 17:53",
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
 		"testUpdateObjectOnExternDatabase" : "MF 7/7/2015 14:49",
-		"testUpdateSingleObject" : "LB 7/4/2015 14:00" } }
+		"testUpdateSingleObject" : "MF 7/8/2015 22:35" } }

@@ -5,6 +5,6 @@ addModelClass: aRPModelClass
 	ifTrue: [
 		self database createTableFor: aRPModelClass.
 		self addModelRouteFor: aRPModelClass.
-		self modelClasses at: (aRPModelClass name asSymbol ) put: aRPModelClass.]
+		self modelClasses at: (aRPModelClass name) put: aRPModelClass.]
 	ifFalse: [
 		self notify: 'Could not register modelclass to application!']

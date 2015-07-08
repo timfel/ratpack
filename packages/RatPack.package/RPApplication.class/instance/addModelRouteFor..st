@@ -3,7 +3,7 @@ addModelRouteFor: aRPModelClass
 
 	"#(#get: #post: #put: #delete:)"
 	| url |
-	url := '/api/', aRPModelClass name.
+	url := '/api/', (aRPModelClass name).
 	
 	(self routesFor: #get:) add: ((url, '/([^/]+)') -> #'getFromRequest:at:').
 	(self routesFor: #get:) add: (url -> #'getAllFromRequest:').

@@ -4,5 +4,8 @@ testPutObjectOnApplication
 	| jsonstring url |
 	app registerModel: RPTestModel.
 	url := '/api/', (RPTestModel name).
-	jsonstring := '{"var1":3, "var2":"Bartholomeus"}'.
+	jsonstring := '{"var1":3,"var2":"Bartholomeus"}'.
 	RPTestHelper put: url on: app content: jsonstring.
+
+	self assert: '{"var1":3,"var2":"Bartholomeus"}' 
+		equals: (RPTestModel createJsonFor: ((app database loadObjects: RPTestModel) first)).
