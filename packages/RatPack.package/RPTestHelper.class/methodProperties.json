@@ -1,7 +1,6 @@
 {
 	"class" : {
 		"check:at:for:" : "MF 6/8/2015 11:50",
-		"createJsonObjectFrom:" : "MF 6/13/2015 22:14",
 		"delete:on:" : "PK 6/21/2015 16:05",
 		"delete:on:content:" : "PK 6/21/2015 16:02",
 		"delete:on:headers:" : "PK 6/21/2015 16:04",

@@ -10,4 +10,4 @@ testGetModelInstance
  
         otherURL := '/api/testmodel/1'.
         result := RPTestHelper get: otherURL on: app.
-        self assert: (result contents contents) equals: jsonString.
+        self assert: jsonString equals: (result contents contents).

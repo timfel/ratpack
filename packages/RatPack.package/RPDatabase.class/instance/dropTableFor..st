@@ -1,4 +1,4 @@
 table handling
 dropTableFor:  aRPModelClass
 
-	self modelDictionary removeKey: (aRPModelClass name asSymbol)
+	self modelDictionary removeKey: (aRPModelClass name)
