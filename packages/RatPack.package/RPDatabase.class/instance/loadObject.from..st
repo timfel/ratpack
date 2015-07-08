@@ -1,10 +1,9 @@
 object handling
 loadObject: anId from: aRPModelClass
 	
-	| jsons objects |	
-	jsons := self modelDictionary at: (aRPModelClass name)
+	| json objectDictionary |	
+	objectDictionary := self modelDictionary at: (aRPModelClass name)
 				ifAbsent: [self notify:  aRPModelClass name, ' not found!'].
-	objects := OrderedCollection new.
-	jsons do:[:each | 
-			objects add: (aRPModelClass createObject: each)].
-	^ objects first
+	json := objectDictionary at: (anId asSymbol) ifAbsent: [self notify: 'Object not found!']. 
+	^ aRPModelClass createObject: json
+	

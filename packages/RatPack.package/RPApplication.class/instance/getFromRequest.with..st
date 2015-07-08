@@ -1,10 +1,9 @@
 object handling
-getFromRequest: aRPModelname at: anID
+getFromRequest: aRPModelname with: anID
 
       | object aJsonString aRPModelClass|
-self halt.
-
 	aRPModelClass := self getRegisteredModel: aRPModelname.
-      object := self database loadObject: anID from: aRPModelClass.
+	[object := self database loadObject: anID from: aRPModelClass ]on: Warning 
+		do:[^ self sendJson: '{}' with: 'model/api'].
       aJsonString := aRPModelClass createJsonFor: object.  
        ^ self sendJson: aJsonString with: 'model/api'

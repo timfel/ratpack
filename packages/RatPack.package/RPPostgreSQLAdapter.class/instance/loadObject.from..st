@@ -9,4 +9,6 @@ loadObject: anId from: aRPModelClass
 	objects := OrderedCollection new.
 	response do:[:each | 
 		objects add: (aRPModelClass reconstructObject: each)].
+	( objects isEmpty)
+		ifTrue: [self notify: 'Object not foud!'].
 	^ objects first
