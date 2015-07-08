@@ -6,5 +6,5 @@ loadObject: anId from: aRPModelClass
 				ifAbsent: [self notify:  aRPModelClass name, ' not found!'].
 	objects := OrderedCollection new.
 	jsons do:[:each | 
-			objects add: (aRPModelClass createObject: jsons)].
+			objects add: (aRPModelClass createObject: each)].
 	^ objects first

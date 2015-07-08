@@ -1,4 +1,4 @@
-test - REST operations - old
+test - REST operations
 testUpdateSingleObject
 
       | url  updateUrl jsonstring |
