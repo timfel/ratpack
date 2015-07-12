@@ -1,16 +1,16 @@
 actions
 addModel
 
-	|aString aClass anArray|
+	| aModel aClass anArray |
 
-	aString := ((UIManager default
+	aModel := ((UIManager default
 					request: 'Model' translated 
-					initialAnswer: 'test' asString ) ifEmpty: [^ self]).
-	aClass := ((UIManager default
+					initialAnswer: 'RPTestModel') ifEmpty: [^ self]).
+	"aClass := ((UIManager default
 					request: 'Class' translated 
-					initialAnswer: RPTest asString ) ifEmpty: [^ self]).
+					initialAnswer: 'RPTestClass') ifEmpty: [^ self]).
 	anArray := ((UIManager default
 					request: 'Values' translated 
-					initialAnswer: 'test', ' variable') ifEmpty: [^ self]).
-	self selectedApplication registerModel: aString on:  (Smalltalk classNamed: aClass) with: (anArray findTokens: ' ' asArray).
+					initialAnswer: 'test', ' variable') ifEmpty: [^ self])."
+	self selectedApplication registerModel: (Smalltalk classNamed: aModel). "on:  (Smalltalk classNamed: aModel) with: (anArray findTokens: ' ' asArray)."
 	self change

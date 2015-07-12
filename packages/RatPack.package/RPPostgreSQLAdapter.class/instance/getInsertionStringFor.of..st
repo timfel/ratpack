@@ -1,4 +1,4 @@
-accessing
+sql helpers
 getInsertionStringFor: anObject of: anRPModelClass
 	
 	| valueString columnString|

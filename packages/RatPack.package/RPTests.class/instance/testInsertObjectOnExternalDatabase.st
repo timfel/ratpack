@@ -1,7 +1,7 @@
 test - database - postgresql
-testCreateAndDropTableWithExternDatabase
-	"INVALID TEST" 
-	
+testInsertObjectOnExternalDatabase
+
 	app database: RPPostgreSQLAdapter new.
 	app database createTableFor: RPTestModel.
-	app database dropTableFor: RPTestModel 
+	app persistObjectBy: '{}' from: RPTestModel.
+	self assert: false.

@@ -1,4 +1,4 @@
-accessing
+sql helpers
 getValueStringFor: anObject of: aRPModelClass
 	
 	| strings |

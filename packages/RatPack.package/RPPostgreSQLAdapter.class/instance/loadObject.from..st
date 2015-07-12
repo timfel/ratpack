@@ -10,5 +10,5 @@ loadObject: anId from: aRPModelClass
 	response do:[:each | 
 		objects add: (aRPModelClass reconstructObject: each)].
 	( objects isEmpty)
-		ifTrue: [self notify: 'Object not foud!'].
+		ifTrue: [self notify: 'Object not found!'].
 	^ objects first

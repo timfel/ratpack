@@ -4,6 +4,6 @@ connectionArguments
 	^ connectionArguments ifNil: [ connectionArguments := PGConnectionArgs
 									hostname: 'localhost'
 									portno: 5432
-									databaseName: 'squeakDB'
+									databaseName: 'squeakdb'
 									userName: 'postgres'
 									password: 'bird']

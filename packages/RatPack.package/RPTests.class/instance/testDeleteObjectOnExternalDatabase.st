@@ -1,7 +1,8 @@
-test - objects
-testDeleteObject
+test - database - postgresql
+testDeleteObjectOnExternalDatabase
 
 	| objects testAmount |
+	app database: RPPostgreSQLAdapter new.
 	testAmount := 3.
 	objects := RPTestHelper createTestObjects: testAmount.
 	app registerModel: RPTestModel.

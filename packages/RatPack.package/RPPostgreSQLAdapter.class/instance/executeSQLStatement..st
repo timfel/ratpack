@@ -1,6 +1,8 @@
 connection
 executeSQLStatement: anSQLStatement
 	
-	self connection startup;
-		execute: anSQLStatement;
-		terminate
+	| response |
+	self connection startup.
+	response := self connection execute: anSQLStatement.
+	self connection terminate.
+	^ response

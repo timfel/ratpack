@@ -1,7 +1,7 @@
-accessing
+sql helpers
 getColumnNames: aRPModelClass
 	
-	aRPModelClass dataTypes keys joinSeparatedBy: ', '
+	^ aRPModelClass dataTypes keys joinSeparatedBy: ', '
 
 
 

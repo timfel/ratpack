@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"checkForDefaultIn:" : "MF 7/6/2015 18:55",
 		"checkRefClassContainsInstanceVariable:" : "pk 7/12/2015 23:32",
 		"checkRefClassForInstanceVariable:" : "MF 7/6/2015 09:46",
 		"createJsonFor:" : "pk 7/12/2015 22:34",

@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"var1",
-		"var2" ],
+		"name",
+		"salary" ],
 	"name" : "RPTestModel",
 	"pools" : [
 		 ],
