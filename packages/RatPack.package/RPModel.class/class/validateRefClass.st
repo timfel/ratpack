@@ -2,6 +2,6 @@ validation
 validateRefClass
 
 	self dataTypes keys do: [:each | 
-				(self checkRefClassForInstanceVariable: each) 
+				(self checkRefClassContainsInstanceVariable: each) 
 					ifFalse: [^ false]].
 	^ true

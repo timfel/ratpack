@@ -38,5 +38,5 @@
 		"testTestModelValidateJsonIncorrect" : "MF 7/7/2015 17:52",
 		"testTestModelValidateJsonWithToManyAttributes" : "MF 7/7/2015 17:53",
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
-		"testUpdateObjectOnExternDatabase" : "pk 7/12/2015 22:30",
+		"testUpdateObjectOnExternDatabase" : "pk 7/12/2015 23:10",
 		"testUpdateSingleObject" : "pk 7/12/2015 22:41" } }

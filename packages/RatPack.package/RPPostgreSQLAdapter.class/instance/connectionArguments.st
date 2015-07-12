@@ -6,4 +6,4 @@ connectionArguments
 									portno: 5432
 									databaseName: 'squeakDB'
 									userName: 'postgres'
-									password: 'bird'.]
+									password: 'bird']

@@ -1,11 +1,9 @@
 validation
 validateObject: aObject
 
-	| neededAttritbutes |
+	| neededAttritbutes allAttributes |
 
 	neededAttritbutes := self dataTypes keys asOrderedCollection copy.
-
-	neededAttritbutes do: [:each | 
-				 [aObject instVarNamed: each] on: Error do: [^false ]].
-
-	^ true
+	allAttributes := aObject class allInstVarNames. 
+	
+	^ allAttributes asSet includesAllOf: neededAttritbutes asSet 	

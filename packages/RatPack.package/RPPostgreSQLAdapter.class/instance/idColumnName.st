@@ -1,0 +1,4 @@
+table handling
+idColumnName
+	
+	^ 'ID'
