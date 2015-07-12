@@ -1,15 +1,11 @@
 validation
 validateJson: aJson
 
-	| attList jsonList jsonObject |
+	| attList specifiedAttributes defaultAttributes jsonObject |
 	jsonObject := Json readFrom: (ReadStream on:  aJson   from: 1 to: (aJson size)).
 
 	attList := self dataTypes keys asOrderedCollection copy.
-	jsonList := jsonObject keys asOrderedCollection copy.
-
-	jsonList do: [:each | 
-				attList remove: (each asString) ifAbsent: [^false ]].
+	specifiedAttributes := jsonObject keys asOrderedCollection copy.
+	defaultAttributes := self defaultValues keys. 
+	^ (defaultAttributes, specifiedAttributes) asSet includesAllOf: (attList asSet). 	
 	
-	attList := self checkForDefaultIn: attList.
-	(attList isEmpty ) ifFalse: [^false].
-	^true

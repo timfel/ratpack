@@ -2,8 +2,8 @@ test - objects
 testAddObject
 	
 	| object |
-	object := RPTestModel createObject: '{"var1":20, "var2":"Tim Tester"}'.
+	object := RPTestModel createObject: RPTestHelper getExampleObject.
 	app registerModel: RPTestModel.
 	app database persist: object from: RPTestModel.
-	self assert: '{"var1":20,"var2":"Tim Tester"}' 
-		equals: (RPTestModel createJsonFor: ((app database loadObjects: RPTestModel) first)).
+	self assert: RPTestHelper getExampleObject equals: 
+		(RPTestModel createJsonFor: ((app database loadObjects: RPTestModel) first)).

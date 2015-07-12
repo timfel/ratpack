@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"dataTypes" : "MF 7/7/2015 14:28",
+		"dataTypes" : "pk 7/12/2015 21:38",
+		"defaultValues" : "pk 7/12/2015 21:38",
 		"refClass" : "MF 7/6/2015 18:40",
 		"tableName" : "MF 7/7/2015 09:54" },
 	"instance" : {

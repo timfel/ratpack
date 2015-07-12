@@ -2,8 +2,8 @@ test - objects
 testDeleteObject
 
 	| object1 object2 object3 |
-	object1 := RPTestModel createObject: '{"var1":20, "var2":"Tim Tester"}'.
-	object2 := RPTestModel createObject: '{"var1":21, "var2":"Hanz Maulwurf"}'.
+	object1 := RPTestModel createObject: RPTestHelper getExampleObject.
+	object2 := RPTestModel createObject: '{"salary":21, "name":"Hanz Maulwurf"}'.
 	object3 := RPTestModel createObject: '{}'.
 	app registerModel: RPTestModel.
 	app database persist: object1 from: RPTestModel.

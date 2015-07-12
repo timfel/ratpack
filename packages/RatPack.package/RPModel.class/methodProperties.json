@@ -2,14 +2,15 @@
 	"class" : {
 		"checkForDefaultIn:" : "MF 7/6/2015 18:55",
 		"checkRefClassForInstanceVariable:" : "MF 7/6/2015 09:46",
-		"createJsonFor:" : "MF 7/6/2015 19:29",
-		"createObject:" : "MF 7/7/2015 08:51",
+		"createJsonFor:" : "pk 7/12/2015 22:34",
+		"createObject:" : "pk 7/12/2015 22:34",
 		"dataTypes" : "MF 7/7/2015 16:27",
+		"defaultValues" : "pk 7/12/2015 16:59",
 		"getDefaultValueFor:" : "MF 7/5/2015 17:29",
 		"reconstructObject:" : "MF 7/7/2015 16:26",
 		"refClass" : "MF 7/5/2015 17:19",
 		"tableName" : "MF 7/8/2015 21:46",
-		"validateJson:" : "MF 7/6/2015 09:30",
+		"validateJson:" : "pk 7/12/2015 22:38",
 		"validateObject:" : "MF 7/6/2015 19:37",
 		"validateRefClass" : "MF 7/6/2015 18:44" },
 	"instance" : {

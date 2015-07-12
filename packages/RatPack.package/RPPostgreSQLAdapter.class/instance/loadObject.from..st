@@ -3,7 +3,7 @@ loadObject: anId from: aRPModelClass
 
 	| objects response |
 	self connection startup.
-	response := self connection execute: ('SELECT * FROM ', (aRPModelClass tableName), ' WHERE var1 = ', anId).
+	response := self connection execute: ('SELECT * FROM ', (aRPModelClass tableName), ' WHERE ID = ', anId).
 	self connection	terminate.
 	response := self transformResponse: response for: aRPModelClass. 
 	objects := OrderedCollection new.
