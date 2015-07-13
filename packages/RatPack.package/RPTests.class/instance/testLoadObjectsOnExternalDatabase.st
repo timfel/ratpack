@@ -8,5 +8,5 @@ testLoadObjectsOnExternalDatabase
 	RPTestHelper insertObjects: newObjects of: RPTestModel into: app database.
   
 	app database: RPPostgreSQLAdapter new.
-	self assert: ((app database loadObjects: RPTestModel) size) equals: 3.
+	self assert: ((app database loadObjectsOf: RPTestModel) size) equals: 3.
 	

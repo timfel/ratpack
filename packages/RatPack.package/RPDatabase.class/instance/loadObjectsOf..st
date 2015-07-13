@@ -1,5 +1,5 @@
 object handling
-loadObjects: aRPModelClass
+loadObjectsOf: aRPModelClass
 
 	| jsons objects |	
 	jsons := self modelDictionary at: (aRPModelClass name)

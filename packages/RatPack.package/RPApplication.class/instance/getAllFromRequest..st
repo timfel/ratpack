@@ -3,7 +3,7 @@ getAllFromRequest: aRPModelname
  
       | objects string aRPModelClass |
 	aRPModelClass := self getRegisteredModel: aRPModelname.
-      objects := self database loadObjects: aRPModelClass.  
+      objects := self database loadObjectsOf: aRPModelClass.  
 	string := '{"data":['.
       objects withIndexDo: [:each :index |
          	(index =  1)

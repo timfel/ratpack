@@ -7,4 +7,4 @@ testAddObject
 	app database persist: object from: RPTestModel.
 	self assert: RPTestHelper getExampleJson equals: 
 				(RPTestModel createJsonFor: 
-					((app database loadObjects: RPTestModel) first)).
+					((app database loadObjectsOf: RPTestModel) first)).

@@ -20,7 +20,8 @@
 		"getValueStringFor:of:" : "pk 7/12/2015 23:16",
 		"idColumnName" : "pk 7/12/2015 22:58",
 		"loadObject:from:" : "LB 7/13/2015 01:43",
-		"loadObjects:" : "LB 7/13/2015 00:12",
+		"loadObjectsOf:" : "LB 7/13/2015 14:28",
+		"loadTable:" : "LB 7/13/2015 10:59",
 		"persist:from:" : "LB 7/12/2015 23:48",
 		"transformResponse:for:" : "MF 7/7/2015 16:23",
 		"update:with:from:" : "LB 7/13/2015 00:47" } }

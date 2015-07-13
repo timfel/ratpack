@@ -1,5 +1,5 @@
 object handling
-loadObjects: aRPModelClass
+loadObjectsOf: aRPModelClass
 
 	| response objectsAsDicts|
 	self connection startup.

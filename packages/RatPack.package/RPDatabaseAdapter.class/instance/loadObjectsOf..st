@@ -1,4 +1,4 @@
 object handling
-loadObjects: aRPModelClass
+loadObjectsOf: aRPModelClass
 
 	self subclassResponsibility 

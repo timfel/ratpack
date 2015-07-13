@@ -1,9 +1,13 @@
 test - REST operations
 testPutObjectOnApplication
 	
-	"
+	| url testJson |
 	app registerModel: RPTestModel.
 	url := '/api/', (RPTestModel name).
-	RPTestHelper put: url on: app content: jsonstring.
-	" 
-	self assert: false
+	testJson := RPTestHelper getExampleJson.
+	RPTestHelper put: url on: app content: RPTestHelper getExampleJson.
+	self assert: (RPTestModel createJsonFor: 
+					(app database loadObject: 1 from: RPTestModel)) 
+					equals: testJson.
+	
+	
