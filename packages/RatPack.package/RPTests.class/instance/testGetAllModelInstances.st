@@ -1,14 +1,12 @@
 test - REST operations
 testGetAllModelInstances
 
-	| modelName jsonstring url result |
-	modelName := 'testmodel'.
-	app registerModel: modelName on: RPTest with: #( 'test' 'variable').
-	url := '/api/testmodel'.
-	jsonstring := '{"test":"foo", "variable":"bar"}'.
-	RPTestHelper put: url on: app content: jsonstring.
-
+	| url result testJson |
+	app registerModel: RPTestModel.
+	url := '/api/', (RPTestModel name).
+	testJson := RPTestHelper getExampleJson.
+	RPTestHelper put: url on: app content: testJson.
+	RPTestHelper put: url on: app content: testJson.
 	result := RPTestHelper get: url on: app.
-	
-
+	self assert: ((result contents contents) includesSubString: (testJson, ',', testJson)).
 	

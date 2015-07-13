@@ -11,5 +11,5 @@
 	"name" : "RPDatabase",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPDatabaseAdapter",
 	"type" : "normal" }

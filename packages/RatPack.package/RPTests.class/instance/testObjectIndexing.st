@@ -1,12 +1,10 @@
 test - objects
 testObjectIndexing
 
-	| jsonObject |
-	
-	jsonObject := RPTestHelper createJsonObjectFrom:  '{"test":"20" , "variable":"green" }'.
-
-	app registerModel: 'testmodel' on: RPTest with: #('test' 'variable').
-	app addObject: jsonObject from: 'testmodel'.
-	self assert: ((app database idDictionary at: #testmodel) = 2).
-	app addObject: jsonObject from: 'testmodel'.
-	self assert: ((app database idDictionary at: #testmodel) = 3)
+	| object |
+	object := RPTestModel createObject:  '{}'.
+	app registerModel: RPTestModel.
+	app database persist: object from: RPTestModel.
+	self assert: 2 equals: (app database idDictionary at: (RPTestModel name)) .
+	app database persist: object from: RPTestModel.
+	self assert: 3 equals:(app database idDictionary at: (RPTestModel name)).

@@ -1,4 +1,5 @@
-table handling
-convertModelToSQLString: aModel
+sql helpers
+convertModelToSQLString: aRPModelClass
 
-	^ 'foo_id VARCHAR(20) PRIMARY KEY, bar INT'
+	^ (aRPModelClass dataTypes associations collect: 
+		[:assoc | self convertAssociationToSQLString: assoc]) joinSeparatedBy: ', '	

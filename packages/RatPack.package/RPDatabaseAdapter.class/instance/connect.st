@@ -1,4 +1,0 @@
-connection
-connect
-
-	self subclassResponsibility 

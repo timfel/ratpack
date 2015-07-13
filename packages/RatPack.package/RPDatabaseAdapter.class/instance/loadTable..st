@@ -1,3 +1,4 @@
 table handling
-loadTable: aModel
+loadTable: aRPModelClass
+	
 	self subclassResponsibility 

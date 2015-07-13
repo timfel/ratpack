@@ -6,10 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"attributes",
-		"modelName",
-		"refClass",
-		"defaultValues" ],
+		 ],
 	"name" : "RPModel",
 	"pools" : [
 		 ],

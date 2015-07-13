@@ -1,7 +1,7 @@
 model handling
-removeModel: aModelname
+removeModel: aRPModelClass
 	
-	self models removeKey: aModelname asSymbol.
-	self database removeModel: aModelname.
-	self removeModelRouteFor: aModelname 
+	self modelClasses removeKey: (aRPModelClass name asSymbol).
+	self database dropTableFor: aRPModelClass.
+	self removeModelRouteFor: aRPModelClass
 	
