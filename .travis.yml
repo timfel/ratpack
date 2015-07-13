@@ -29,4 +29,7 @@ install:
    - cd filetreeCI-*
    - export FILETREE_CI_HOME="$(pwd)"
 
+before_script:
+  - psql -c 'create database squeakdb;' -U postgres
+
 script: $FILETREE_CI_HOME/run.sh
