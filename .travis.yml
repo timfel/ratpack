@@ -9,6 +9,7 @@ env:
     - SMALLTALK="Squeak4.5"
 
 addons:
+  postgresql: "9.3"
   apt:
     packages:
     # 32-bit VM
