@@ -1,10 +1,13 @@
 actions
 removeModel
 
-	| aModelName |
-	aModelName := ((UIManager default
-					request: 'Removing Model' translated
-					initialAnswer: 'RPTestModel' translated) ifEmpty: [^ self]).
-	self selectedApplication removeModel: (Smalltalk classNamed: aModelName).
-	self change.
+	| aRPModelClass labels |
+	labels := self selectedApplication modelClasses keys collect: [:each | each].
+	aRPModelClass := (UIManager default
+				chooseFrom: labels
+				values: self selectedApplication modelClasses keys
+				lines: #()
+				title: 'Choose Model') ifNil: [^ self].
+	self selectedApplication removeModel: (Smalltalk classNamed: aRPModelClass).
+	self change
 	

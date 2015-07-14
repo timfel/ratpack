@@ -1,14 +1,20 @@
 actions
 addObject
 
-	| aModelName aJsonString |
+	| aJsonString labels aRPModelClass |
 
-	aModelName := ((UIManager default
-					request: 'For Model' translated 
-					initialAnswer: 'test' asString ) ifEmpty: [^ self]).
+	labels := self selectedApplication modelClasses keys collect: [:each | each].
+	(labels size == 0)
+		ifTrue: [self notify: 'Keine Models registriert!']. 
+	aRPModelClass := (UIManager default
+				chooseFrom: labels
+				values: self selectedApplication modelClasses keys
+				lines: #()
+				title: 'Choose Model') ifNil: [^ self].
+"Direkt auf die bekannten default Values zugreifen"
 	aJsonString := ((UIManager default
 					request: 'Object as JsonString' translated 
-					initialAnswer: '{"test":"20","variable":"green" }') ifEmpty: [^ self]).
-	self selectedApplication addObject: (RPTestHelper  createJsonObjectFrom: aJsonString) from: aModelName.
+					initialAnswer: '{"salary":"1","name":"Max Mustermann" }') ifEmpty: [^ self]).
+	self selectedApplication persistObjectBy: aJsonString from: (Smalltalk classNamed: aRPModelClass).
 	self change
 	

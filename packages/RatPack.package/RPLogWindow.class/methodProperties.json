@@ -2,4 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "LB 6/21/2015 15:13" } }
+		"buildRequestLogMessageFrom:" : "mm 7/13/2015 09:30",
+		"buildResponseLogMessageFrom:" : "mm 7/13/2015 09:30",
+		"disableLogging" : "mm 7/13/2015 09:30",
+		"enableLogging" : "mm 7/13/2015 09:31",
+		"getIpFrom:" : "mm 7/13/2015 09:34",
+		"initialize" : "mm 7/13/2015 09:31",
+		"logRequest:andResponse:" : "mm 7/13/2015 09:31",
+		"loggingIsEnabled" : "mm 7/13/2015 09:31" } }

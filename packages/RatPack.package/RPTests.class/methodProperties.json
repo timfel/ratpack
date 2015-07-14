@@ -26,7 +26,7 @@
 		"testSimpleJSON" : "LB 5/20/2015 13:34",
 		"testTestModelCreateDefaultObject" : "pk 7/12/2015 22:09",
 		"testTestModelCreateJsonFor" : "LB 7/13/2015 14:53",
-		"testTestModelCreateJsonForInvalideObject" : "MF 7/6/2015 19:40",
+		"testTestModelCreateJsonForInvalidObject" : "mm 7/14/2015 19:53",
 		"testTestModelCreateSpecifiedObject" : "pk 7/12/2015 22:10",
 		"testTestModelReconstructObject" : "pk 7/12/2015 22:11",
 		"testTestModelValidateJsonCorrect" : "pk 7/12/2015 22:08",
