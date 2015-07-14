@@ -1,7 +1,7 @@
 actions
 toggleLogging
 
-	self selectedApplication loggingIsEnabled 
+	self selectedApplication logWindow loggingIsEnabled 
 		ifTrue: [self selectedApplication disableLogging ]
 		ifFalse: [self selectedApplication enableLogging ].
 	self change.

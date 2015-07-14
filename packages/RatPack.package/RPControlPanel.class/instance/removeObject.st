@@ -1,13 +1,19 @@
 actions
 removeObject
 
-	| aModelName id |
-	aModelName := ((UIManager default
-					request: 'Modelname' translated
-					initialAnswer: 'test' translated) ifEmpty: [^ self]).
-	id := ((UIManager default
-					request: 'ObjectID' translated
-					initialAnswer: '1' translated) ifEmpty: [^ self]).
-	self selectedApplication removeObject: id from: aModelName asSymbol.
-	self change.
+	| aRPModelClass id labels numbers |
+	labels := self selectedApplication modelClasses keys.
+	(labels isEmpty)
+		ifTrue: [self notify: 'No models registered!']. 
+	aRPModelClass := (self createListOf: labels with: self selectedApplication modelClasses keys) 
+						ifNil: [^ self cancel].
+	numbers := (self selectedApplication database modelDictionary at: aRPModelClass) keys.
+	(numbers isEmpty)
+		ifTrue: [self notify: 'No objects available.'].
+
+	id := (self createListOf: numbers 
+			    with: (self selectedApplication database modelDictionary at: aRPModelClass) keys) 
+			ifNil: [^ self cancel].
+	self selectedApplication deleteFromRequest: aRPModelClass asSymbol with: id .
+	self change
 	

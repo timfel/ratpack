@@ -1,5 +1,5 @@
 test - models
-testTestModelCreateJsonForInvalideObject
+testTestModelCreateJsonForInvalidObject
 
 	| object | 
 	object := 1.

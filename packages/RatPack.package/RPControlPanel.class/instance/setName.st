@@ -2,7 +2,7 @@ actions
 setName
 
 	self selectedApplication
-		name: ((UIManager default
-						request: self class appNameChooserString
-						initialAnswer: self selectedApplication name) ifEmpty: [^ self]).
-	self change.
+		name: ((self createTextfieldFor: (self class appNameChooserString)
+					 withInitialAnswer: (self selectedApplication name))
+				ifEmpty: [^ self cancel]).
+	self change

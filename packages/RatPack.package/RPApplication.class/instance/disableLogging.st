@@ -1,5 +1,4 @@
 logging
 disableLogging 
 
-	loggingIsEnabled := false.
-	logWindow closeAllViews
+	self logWindow disableLogging 
