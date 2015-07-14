@@ -1,4 +1,4 @@
 logging
 disableLogging 
 
-	self logWindow disableLogging 
+	self logWindow disableLogging. 

@@ -4,9 +4,8 @@
 	"instance" : {
 		"buildRequestLogMessageFrom:" : "mm 7/13/2015 09:30",
 		"buildResponseLogMessageFrom:" : "mm 7/13/2015 09:30",
-		"disableLogging" : "mm 7/13/2015 09:30",
-		"enableLogging" : "mm 7/13/2015 09:31",
+		"disableLogging" : "LB 7/15/2015 01:17",
+		"enableLogging" : "LB 7/15/2015 01:19",
 		"getIpFrom:" : "mm 7/13/2015 09:34",
-		"initialize" : "mm 7/13/2015 09:31",
-		"logRequest:andResponse:" : "mm 7/13/2015 09:31",
-		"loggingIsEnabled" : "mm 7/13/2015 09:31" } }
+		"logRequest:andResponse:" : "LB 7/15/2015 01:21",
+		"loggingIsEnabled" : "LB 7/15/2015 01:20" } }
