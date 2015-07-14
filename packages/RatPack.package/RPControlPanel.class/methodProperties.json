@@ -14,7 +14,7 @@
 	"instance" : {
 		"addApplication" : "mm 7/14/2015 20:53",
 		"addModel" : "mm 7/14/2015 20:47",
-		"addObject" : "mm 7/14/2015 20:55",
+		"addObject" : "mm 7/14/2015 22:29",
 		"applicationIndex" : "tfel 2/1/2012 10:04",
 		"applicationIndex:" : "tfel 2/1/2012 10:49",
 		"applicationInspect" : "mm 7/13/2015 09:34",
@@ -26,7 +26,6 @@
 		"change" : "tfel 2/1/2012 10:33",
 		"createListOf:with:" : "mm 7/14/2015 20:40",
 		"createTextfieldFor:withInitialAnswer:" : "mm 7/14/2015 20:22",
-		"defaultJsonFor:" : "mm 7/14/2015 21:30",
 		"exploreObject" : "tfel 2/1/2012 10:26",
 		"fillApplicationMenu:from:" : "TimFelgentreff 8/28/2012 15:22",
 		"handleShortcut:" : "tfel 2/1/2012 16:05",

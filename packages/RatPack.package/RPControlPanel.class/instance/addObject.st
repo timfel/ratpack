@@ -1,15 +1,17 @@
 actions
 addObject
 
-	| aJsonString labels aRPModelClass |
+	| aJsonString labels aRPModelClassName anRPModelClass |
 	labels := self selectedApplication modelClasses keys.
 	(labels isEmpty)
 		ifTrue: [self notify: 'No models registered.']. 
-	aRPModelClass := (self createListOf: labels with: (self selectedApplication modelClasses keys))
+	aRPModelClassName := (self createListOf: labels with: (self selectedApplication modelClasses keys))
 						 ifNil: [^ self cancel].
+	anRPModelClass := self selectedApplication getRegisteredModel: aRPModelClassName.
 	aJsonString := ((self createTextfieldFor: 'Object as JsonString' translated 
-						  withInitialAnswer: (self defaultJsonFor: aRPModelClass))  
+						  withInitialAnswer: (anRPModelClass defaultJson))  
 						ifEmpty: [^ self cancel]).
-	self selectedApplication persistObjectBy: aJsonString from: (Smalltalk classNamed: aRPModelClass).
+	self selectedApplication persistObjectBy: aJsonString 
+		from: anRPModelClass.
 	self change
 	
