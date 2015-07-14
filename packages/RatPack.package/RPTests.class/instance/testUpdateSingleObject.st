@@ -7,10 +7,10 @@ testUpdateSingleObject
 	RPTestHelper persist: (RPTestHelper createTestObjects: 1) on: app.
 
 	objectToUpdate := RPTestHelper load: 1 on: app.
-	objectToUpdate name: 'Updated Ulf'.
+	objectToUpdate object name: 'Updated Ulf'.
 	self assert: objectToUpdate notNil.
 
-	RPTestHelper put: idUrl on: app content: (RPTestModel createJsonFor: objectToUpdate).
+	RPTestHelper put: idUrl on: app content: (RPTestModel createJsonFor: objectToUpdate object).
 	updatedObject := RPTestHelper load: 1 on: app.
 	self assert: updatedObject notNil.
-	self assert: (RPTestModel createJsonFor: updatedObject) equals: (RPTestModel createJsonFor: objectToUpdate).
+	self assert: (RPTestModel createJsonFor: updatedObject object) equals: (RPTestModel createJsonFor: objectToUpdate object).

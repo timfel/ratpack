@@ -10,4 +10,4 @@ testUpdateObjectOnExternalDatabase
 	updatedObject := objects first.
 	updatedObject name: 'Updated Ulf'.
 	app database update: updatedObject with: 1 from: RPTestModel.
-	self assert: (app database loadObject: 1 from: RPTestModel) name equals: 'Updated Ulf'.  
+	self assert: ((app database loadModelObject: 1 from: RPTestModel) object) name equals: 'Updated Ulf'.  

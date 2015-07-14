@@ -1,5 +1,5 @@
 object handling
-transformToCollection: aPGResponse for: aRPModelClass
+transformToCollection: aPGResponse
 
 	^ aPGResponse dataRows collect: [ :row | self rowToDict: row]
 

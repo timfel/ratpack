@@ -9,5 +9,5 @@ getUpdateStringOf: anObject with: anId from: aRPModelClass
 
 	^ ('UPDATE ', (aRPModelClass tableName), 
 			' SET ', (updatedValues joinSeparatedBy: ', '),
-			' WHERE ',  self idColumnName,  ' = ', anId)
+			' WHERE ',  (aRPModelClass idColumnName),  ' = ', anId)
 	

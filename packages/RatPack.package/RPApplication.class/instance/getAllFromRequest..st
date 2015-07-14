@@ -1,13 +1,13 @@
 object handling
 getAllFromRequest: aRPModelname
  
-      | objects string aRPModelClass |
+      | modelObjects string aRPModelClass |
 	aRPModelClass := self getRegisteredModel: aRPModelname.
-      objects := self database loadObjectsOf: aRPModelClass.  
+      modelObjects := self database loadModelObjectsOf: aRPModelClass.  
 	string := '{"data":['.
-      objects withIndexDo: [:each :index |
+      modelObjects withIndexDo: [:each :index |
          	(index =  1)
               	ifFalse: [string := string , ','] .
-              string := string , (aRPModelClass createJsonFor: each)].
+              string := string , each asJson ].
    	string := string,']}'.
   	^self sendJson: string with: 'model/api'

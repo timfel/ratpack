@@ -1,12 +1,16 @@
 object handling
 update: anObject with: anId from: aRPModelClass
 	
+	| entry |
 	[self modelDictionary at: aRPModelClass name ]
 		on: KeyNotFound 
 		do:[ self modelDictionary at: (aRPModelClass name)  put: (IdentityDictionary new)].
-	(self modelDictionary 
-		at: aRPModelClass name ) 
+	
+	entry := (aRPModelClass createAttributeDictionaryFor: anObject).
+	entry at: aRPModelClass idColumnName put: anId.
+
+	(self modelDictionary at: aRPModelClass name ) 
 			at: (anId asString asSymbol)
-			put: (aRPModelClass createJsonFor: anObject).
+			put: entry.
 	
 	

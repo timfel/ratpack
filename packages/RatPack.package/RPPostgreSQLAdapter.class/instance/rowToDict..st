@@ -1,5 +1,5 @@
 object handling
-rowToDict: aPGRow for: aRPModelClass
+rowToDict: aPGRow
 
 	"aRPModelClass dataTypes keysDo:[ :key | 
 		dict at: (key asSymbol ) put: (aPGRow atName: key asSymbol)]."

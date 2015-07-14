@@ -1,4 +1,4 @@
 object handling
-loadObject: anId from: aRPModelClass
+loadModelObjectsOf: aRPModelClass
 
 	self subclassResponsibility 

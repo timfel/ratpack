@@ -1,4 +1,4 @@
 http requests
 load: anId on: app
 
-	^ app database loadObject: anId from: RPTestModel 
+	^ app database loadModelObject: anId from: RPTestModel 

@@ -8,7 +8,7 @@ testGetModelInstance
       RPTestHelper put: url on: app content: testJson.
       idUrl := url, '/1'.
       result := RPTestHelper get: idUrl on: app.
-      self assert: testJson equals: (result contents contents).
+      self assert:  ((result contents contents) includesSubString: testJson).
 	self assert: result status equals: #ok.
 	self assert: result contentType equals: 'application/json'.
 
