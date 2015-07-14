@@ -2,23 +2,18 @@ actions
 removeObject
 
 	| aRPModelClass id labels numbers |
-	labels := self selectedApplication modelClasses keys collect: [:each | each].
-	(labels size == 0)
-		ifTrue: [self notify: 'Keine Models registriert!']. 
-	aRPModelClass := (UIManager default
-				chooseFrom: labels
-				values: self selectedApplication modelClasses keys
-				lines: #()
-				title: 'Choose Model') ifNil: [^ self].
-"Liste der Objekte"
-	numbers := (self selectedApplication database modelDictionary at: aRPModelClass) keys collect: [:each| each].
-	(numbers size == 0)
-		ifTrue: [self notify: 'Keine Objekte vorhanden!']. 
-	id := (UIManager default
-				chooseFrom: numbers
-				values: (self selectedApplication database modelDictionary at: aRPModelClass) keys
-				lines: #()
-				title: 'Choose ObjectID') ifNil: [^ self].
+	labels := self selectedApplication modelClasses keys.
+	(labels isEmpty)
+		ifTrue: [self notify: 'No models registered!']. 
+	aRPModelClass := (self createListOf: labels with: self selectedApplication modelClasses keys) 
+						ifNil: [^ self cancel].
+	numbers := (self selectedApplication database modelDictionary at: aRPModelClass) keys.
+	(numbers isEmpty)
+		ifTrue: [self notify: 'No objects available.'].
+
+	id := (self createListOf: numbers 
+			    with: (self selectedApplication database modelDictionary at: aRPModelClass) keys) 
+			ifNil: [^ self cancel].
 	self selectedApplication deleteFromRequest: aRPModelClass asSymbol with: id .
 	self change
 	

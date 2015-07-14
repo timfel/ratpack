@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "LB 6/21/2015 20:52",
-		"tearDown" : "LB 7/13/2015 00:02",
+		"tearDown" : "mm 7/14/2015 21:38",
 		"testAddObject" : "MF 7/14/2015 16:56",
 		"testConvertModelClassToSQLString" : "LB 7/12/2015 21:31",
 		"testCreateTableWithExternalDatabase" : "LB 7/12/2015 22:27",

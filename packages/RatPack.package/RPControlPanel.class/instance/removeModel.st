@@ -2,12 +2,9 @@ actions
 removeModel
 
 	| aRPModelClass labels |
-	labels := self selectedApplication modelClasses keys collect: [:each | each].
-	aRPModelClass := (UIManager default
-				chooseFrom: labels
-				values: self selectedApplication modelClasses keys
-				lines: #()
-				title: 'Choose Model') ifNil: [^ self].
+	labels := self selectedApplication modelClasses keys.
+	aRPModelClass := (self createListOf: labels with: (self selectedApplication modelClasses keys)) 
+						ifNil: [^ self cancel].
 	self selectedApplication removeModel: (Smalltalk classNamed: aRPModelClass).
 	self change
 	
