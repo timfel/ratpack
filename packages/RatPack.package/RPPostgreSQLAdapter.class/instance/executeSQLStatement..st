@@ -1,4 +1,4 @@
-connection
+sql helpers
 executeSQLStatement: anSQLStatement
 	
 	| response |

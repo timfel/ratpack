@@ -1,14 +1,11 @@
 object handling
 loadObject: anId from: aRPModelClass
 
-	| objects response |
-	self connection startup.
-	response := self connection execute: ('SELECT * FROM ', (aRPModelClass tableName), ' WHERE ID = ', anId).
-	self connection	terminate.
-	response := self transformResponse: response for: aRPModelClass. 
-	objects := OrderedCollection new.
-	response do:[:each | 
-		objects add: (aRPModelClass reconstructObject: each)].
-	( objects isEmpty)
-		ifTrue: [self notify: 'Object not found!'].
-	^ objects first
+	| response objectDictionaries |
+	response := self executeSQLStatement: ('SELECT * FROM ', (aRPModelClass tableName), ' WHERE ', self idColumnName,  '=', anId).
+	objectDictionaries := self transformToCollection: response for: aRPModelClass. 
+	^ (objectDictionaries collect: [:each | aRPModelClass reconstructObject: each])
+			ifEmpty: [self notify: 'Object not found!'];
+			first 
+	
+	
