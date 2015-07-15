@@ -10,7 +10,6 @@
 		"database",
 		"dynamicEnv",
 		"routes",
-		"loggingIsEnabled",
 		"logWindow" ],
 	"name" : "RPApplication",
 	"pools" : [

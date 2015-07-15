@@ -1,5 +1,5 @@
 as yet unclassified
 disableLogging 
 
-	loggingIsEnabled := false.
-	self closeAllViews
+	self closeAllViews.
+	loggingIsEnabled := false

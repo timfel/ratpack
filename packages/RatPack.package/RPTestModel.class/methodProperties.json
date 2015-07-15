@@ -2,6 +2,7 @@
 	"class" : {
 		"dataTypes" : "pk 7/12/2015 21:38",
 		"defaultValues" : "pk 7/12/2015 21:38",
+		"foreignKeys" : "LB 7/15/2015 00:19",
 		"refClass" : "MF 7/6/2015 18:40",
 		"tableName" : "MF 7/7/2015 09:54" },
 	"instance" : {

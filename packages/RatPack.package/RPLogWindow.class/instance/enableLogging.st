@@ -1,5 +1,5 @@
 as yet unclassified
 enableLogging 
 
-	loggingIsEnabled := true.
-	self open
+	self open.
+	loggingIsEnabled := true

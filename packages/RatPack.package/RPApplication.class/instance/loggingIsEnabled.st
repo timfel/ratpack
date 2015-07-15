@@ -1,4 +1,0 @@
-logging
-loggingIsEnabled 
-	
-	^ loggingIsEnabled

@@ -1,5 +1,5 @@
 logging
-initializeLogging  
-	
+initializeLogging
+
 	logWindow := RPLogWindow new.
 	self disableLogging
