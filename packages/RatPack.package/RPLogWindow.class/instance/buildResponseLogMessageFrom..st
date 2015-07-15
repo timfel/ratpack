@@ -1,4 +1,4 @@
 as yet unclassified
 buildResponseLogMessageFrom: aHttpResponse 
 
-	^ aHttpResponse status asString.
+	^ aHttpResponse status asString
