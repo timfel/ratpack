@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"modelDictinary",
+		"idDictionary" ],
+	"name" : "RPDatabase",
+	"pools" : [
+		 ],
+	"super" : "RPDatabaseAdapter",
+	"type" : "normal" }

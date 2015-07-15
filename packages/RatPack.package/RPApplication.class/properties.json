@@ -1,0 +1,18 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"modelClasses",
+		"database",
+		"dynamicEnv",
+		"routes",
+		"logWindow" ],
+	"name" : "RPApplication",
+	"pools" : [
+		 ],
+	"super" : "HttpService",
+	"type" : "normal" }
