@@ -6,4 +6,5 @@ initialize
 	self initializeDynamicVariables.
 	self initializeRoutes. 
 	self initializeLogging.
-	self initializePragmaRoutes
+	self initializePragmaRoutes.
+	self initializeEndpointRoutes

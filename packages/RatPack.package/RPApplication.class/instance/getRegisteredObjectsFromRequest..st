@@ -1,5 +1,5 @@
 object handling
-getAllFromRequest: aRPModelname
+getRegisteredObjectsFromRequest: aRPModelname
  
       | modelObjects string aRPModelClass |
 	aRPModelClass := self getRegisteredModel: aRPModelname.
