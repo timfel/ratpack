@@ -29,7 +29,4 @@ install:
    - cd filetreeCI-*
    - export FILETREE_CI_HOME="$(pwd)"
 
-before_script:
-  - cp config/database.yml.travis config/.database.yml
-
 script: $FILETREE_CI_HOME/run.sh
