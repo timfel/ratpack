@@ -10,15 +10,18 @@ env:
     - SMALLTALK="Squeak4.5"
 
 addons:
-  postgresql: "9.4"
-
-addons:
   apt:
     packages:
     # 32-bit VM
     - libc6:i386
     # UUIDPlugin
     - libuuid1:i386
+  postgresql: "9.4"
+
+before_install:
+   - psql -c "CREATE DATABASE test;" -U postgres
+   - psql -c "CREATE DATABASE squeakdb;" -U postgres
+   - psql -c "ALTER USER postgres WITH PASSWORD 'secret';" -U postgres
 
 install:
    - export PROJECT_HOME="$(pwd)"
