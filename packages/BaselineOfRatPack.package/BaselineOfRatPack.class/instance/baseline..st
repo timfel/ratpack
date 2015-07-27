@@ -13,7 +13,8 @@ baseline: spec
 		spec package: 'Cryptography' with: [
 			spec repository: 'http://www.squeaksource.com/Cryptography' ].
 		spec package: 'PostgresV2' with: [
-			spec repository: 'http://www.squeaksource.com/PostgresV2' ].
+			spec repository: 'http://www.squeaksource.com/PostgresV2';
+				file: 'PostgresV2-EdwinDH.29'].
 		spec package: 'VB-Regex' with: [
 			spec repository: 'http://www.squeaksource.com/Regex' ].
 		spec package: 'JSON' with: [
