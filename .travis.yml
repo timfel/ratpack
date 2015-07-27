@@ -4,6 +4,7 @@ sudo: false
 env:
   global:
     - BASELINE=RatPack
+    - EXCLUDE_CATEGORIES="Cryptography,PostgresV2"
   matrix:
     # - SMALLTALK="SqueakTrunk"
     - SMALLTALK="Squeak4.6"
