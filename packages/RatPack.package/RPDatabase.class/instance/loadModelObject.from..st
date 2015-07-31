@@ -1,9 +1,9 @@
 object handling
-loadModelObject: anId from: aRPModelClass
+loadModelObject: anId from: anRPModelClass
 	
-	| dictinary objectDictionary |	
-	objectDictionary := self modelDictionary at: (aRPModelClass name)
-				ifAbsent: [self notify:  aRPModelClass name, ' not found!'].
-	dictinary := objectDictionary at: (anId asString asSymbol) ifAbsent: [self notify: 'Object not found!']. 
-	^ aRPModelClass constructModel: dictinary
+	| objectDictionaries |
+	objectDictionaries := self loadModelObjectHelperFrom: anRPModelClass.
+	^ objectDictionaries at: (anId asString asSymbol) 
+									ifAbsent: [self notify: 'Object not found!']. 
+	
 	

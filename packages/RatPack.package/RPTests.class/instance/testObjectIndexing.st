@@ -2,7 +2,7 @@ test - objects
 testObjectIndexing
 
 	| object |
-	object := RPTestModel createObject:  '{}'.
+	object := RPTestHelper createTestObject.
 	app registerModel: RPTestModel.
 	app database persist: object from: RPTestModel.
 	self assert: 2 equals: (app database idDictionary at: (RPTestModel name)) .

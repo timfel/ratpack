@@ -1,8 +1,7 @@
 object handling
-loadModelObjectsOf: aRPModelClass
+loadModelObjectsOf: anRPModelClass
 
 	| response objectsAsDicts |
-	response := self executeSQLStatement: ('SELECT * FROM ', (aRPModelClass tableName)).
+	response := self executeSQLStatement: ('SELECT * FROM ', (anRPModelClass tableName)).
 	objectsAsDicts := self transformToCollection: response. 
-	
-	^ objectsAsDicts collect: [:each | (aRPModelClass constructModel: each)].
+	^ objectsAsDicts collect: [:each | (anRPModelClass constructModel: each)].

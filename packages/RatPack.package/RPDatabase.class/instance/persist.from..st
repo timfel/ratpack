@@ -10,4 +10,4 @@ persist: anObject from: aRPModelClass
 	entry at: aRPModelClass idColumnName put: newId.
 	(self modelDictionary at: aRPModelClass name)
 			 at: (newId asString asSymbol)
-			put: entry
+			put: entry.
