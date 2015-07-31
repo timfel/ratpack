@@ -8,7 +8,6 @@ env:
   matrix:
     # - SMALLTALK="SqueakTrunk"
     - SMALLTALK="Squeak4.6"
-    - SMALLTALK="Squeak4.5"
 
 addons:
   apt:
