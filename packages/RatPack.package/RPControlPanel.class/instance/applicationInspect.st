@@ -1,6 +1,10 @@
 accessing
 applicationInspect
 
+	| set |
+	set := Set new.
 	self selectedApplication ifNil: [^ ''].
-	^ 'routes: ', self selectedApplication class routes printString, String cr,
-		'mode: ', self selectedApplication mode printString, String cr
+	self selectedApplication routes values do: [:each | each do: [:value | set add: value key]].
+	^ 'routes: ', (set asArray joinSeparatedBy: '   ') printString, String cr,
+		'mode: ', self selectedApplication mode printString, String cr,
+			'models: ', (self selectedApplication modelClasses keys asArray joinSeparatedBy: '   ') printString, String cr.

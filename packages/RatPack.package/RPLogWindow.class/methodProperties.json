@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"buildRequestLogMessageFrom:" : "mm 7/13/2015 09:30",
+		"buildResponseLogMessageFrom:" : "RS 7/15/2015 14:10",
+		"disableLogging" : "RS 7/15/2015 14:09",
+		"enableLogging" : "RS 7/15/2015 14:10",
+		"getIpFrom:" : "mm 7/13/2015 09:34",
+		"logRequest:andResponse:" : "LB 7/15/2015 01:21",
+		"loggingIsEnabled" : "LB 7/15/2015 01:20" } }

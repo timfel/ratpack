@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack-Testing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"salary",
+		"name" ],
+	"name" : "RPTestClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -3,9 +3,7 @@ route: aHttpRequest
 	| method arguments match methodRoutes |
 	method := aHttpRequest method asLowercase asSymbol asMutator.
 	methodRoutes := self routesFor: method.
-
 	match := self findHandlerFor: aHttpRequest in: methodRoutes.
-	match ifNil: [^ self notFound].
 
 	"args needed as array by self perfom: withArguments:"
 	arguments := (aHttpRequest url findTokens: '/') allButFirst asArray

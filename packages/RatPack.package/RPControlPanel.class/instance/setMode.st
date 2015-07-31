@@ -1,8 +1,8 @@
 actions
 setMode
 
+	| modes |
+	modes := self class executionModes.
 	self selectedApplication
-		mode: ((UIManager default
-				chooseFrom: #(deployment debug)
-				values: #(deployment debug)) ifNil: [^ self]).
-	self change.
+		mode: ((self createListOf: modes with: modes) ifNil: [^ self cancel]).
+	self change

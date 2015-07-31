@@ -1,10 +1,8 @@
 model handling
-addModelRouteFor: anRPModelName
+addModelRouteFor: anRPModelClass
 
-	"#(#get: #post: #put: #delete:)"
-	| url |
-	url := '/api/', anRPModelName.
+	self addDefaultGetRoutesFor: anRPModelClass.
+	self addDefaultDeleteRoutesFor: anRPModelClass.
+	self addDefaultPostRoutesFor: anRPModelClass.	
+	self addDefaultPutRoutesFor: anRPModelClass
 	
-	(self routesFor: #get:) add: (('/api/', anRPModelName , '/([^/]+)') -> #'getObjectAsJsonStringFrom:at:').
-	(self routesFor: #get:) add: (('/api/', anRPModelName) -> #'getAllObjectsAsJsonStringFrom:').
-	(self routesFor: #put:) add: (('/api/', anRPModelName) -> #'putObjectIntoDatabase:')

@@ -2,8 +2,7 @@ actions
 setPort
 
 	self selectedApplication
-		portNumber: ((UIManager default
-						request: self class portString
-						initialAnswer: self selectedApplication portNumber asString)
-							ifEmpty: [^ self]) asInteger.
-	self change.
+		portNumber: ((self createTextfieldFor: (self class portString) 
+						     withInitialAnswer: (self selectedApplication portNumber asString))
+							ifEmpty: [^ self cancel]) asInteger.
+	self change

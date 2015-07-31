@@ -1,5 +1,6 @@
-tests
+test - routing
 testError
+
 	| result |
 	result := RPTestHelper get: '/raiseError' on: app.
 	self assert: (result contents contents includesSubString: 'My test error').

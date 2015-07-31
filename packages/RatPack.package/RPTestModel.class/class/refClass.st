@@ -1,0 +1,5 @@
+needed methods
+refClass
+
+	^ RPTestClass
+	

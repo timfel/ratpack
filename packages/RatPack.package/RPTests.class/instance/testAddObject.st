@@ -1,13 +1,9 @@
-tests
+test - objects
 testAddObject
-
-	| jsonObject string stream|
-	string := ('{"test":"20","variable":"green" }' asOrderedCollection).
-	stream := ReadStream on:  string from: 1 to: (string size).
-	jsonObject := Json readFrom: stream.
-
-	app registerModel: 'testmodel' on: RPTest with: #('test' 'variable').
-	app addObject: jsonObject from: 'testmodel'.
-	self assert: ((app database modelDictionary at: 'testmodel' asSymbol ) size = 1).
-	app addObject: jsonObject from: 'testmodel'.
-	self assert: ((app database modelDictionary at: 'testmodel' asSymbol ) size = 2)
+	
+	| object |
+	app registerModel: RPTestModel.
+	object := RPTestModel createObject: RPTestHelper getExampleJson.
+	app database persist: object from: RPTestModel.
+	self assert: RPTestHelper getExampleJson 
+		 equals: (RPTestModel createJsonFor: (RPTestHelper load: 1 on: app) object).

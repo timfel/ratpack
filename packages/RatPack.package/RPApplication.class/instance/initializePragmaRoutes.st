@@ -1,7 +1,6 @@
-private
+initialize-release
 initializePragmaRoutes
 
-	routes := IdentityDictionary new.
 	RPApplication requestMethods do: [:method | | pragmas | 
 		routes at: method put: (OrderedCollection new).
 		pragmas := (Pragma allNamed: method from: self class to: RPApplication).

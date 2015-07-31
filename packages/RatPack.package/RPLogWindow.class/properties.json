@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"loggingIsEnabled" ],
+	"name" : "RPLogWindow",
+	"pools" : [
+		 ],
+	"super" : "TranscriptStream",
+	"type" : "normal" }

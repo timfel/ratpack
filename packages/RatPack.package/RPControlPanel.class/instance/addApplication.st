@@ -1,19 +1,20 @@
 actions
 addApplication
-	| labels class |
+
+	| labels class port name |
 	labels := RPApplication withAllSubclasses collect: [:each | each name].
-	class := (UIManager default
-				chooseFrom: labels
-				values: RPApplication withAllSubclasses
-				lines: #()
-				title: self class appClassChooserString) ifNil: [^ self].
+	class := (self createListOf: labels with: (RPApplication withAllSubclasses)) ifNil: [^ self cancel].
+
+	port := ((self createTextfieldFor: (self class portString)
+				  withInitialAnswer: (class defaultPort asString))
+				ifEmpty: [^ self cancel]) asInteger.
+	name := (self createTextfieldFor: (self class appNameChooserString)
+				        withInitialAnswer: (class defaultName asString))
+				ifEmpty: [^ self cancel].
+
 	class
 		runIn: class defaultMode
-		on: ((UIManager default
-					request: self class portString
-					initialAnswer: class defaultPort asString) ifEmpty: [^ self]) asInteger
-		named: ((UIManager default
-					request: self class appNameChooserString
-					initialAnswer: class defaultName asString) ifEmpty: [^ self]).
+		on: port
+		named: name.
 	self applicationIndex: self applicationList size.
 	self change.

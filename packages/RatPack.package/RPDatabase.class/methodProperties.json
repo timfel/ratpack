@@ -2,14 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addObject:at:" : "MF 5/31/2015 13:03",
-		"getAllObjectsFrom:" : "mm 6/9/2015 15:41",
-		"getNextIdForModel:" : "MF 5/31/2015 13:35",
-		"getObject:from:" : "mm 6/9/2015 16:17",
-		"idDictionary" : "MF 5/31/2015 10:53",
-		"idDictionary:" : "MF 5/31/2015 10:50",
-		"modelDictionary" : "MF 5/31/2015 11:40",
-		"modelDictionary:" : "MF 5/31/2015 11:40",
-		"registerModel:" : "MF 5/31/2015 11:51",
-		"removeModel:" : "MF 5/31/2015 11:24",
-		"removeObject:from:" : "MF 5/31/2015 14:02" } }
+		"connectTo:on:at:as:with:" : "MF 7/4/2015 15:59",
+		"createTableFor:" : "MF 7/7/2015 10:03",
+		"deleteObject:from:" : "MF 7/4/2015 15:39",
+		"dropTableFor:" : "MF 7/7/2015 10:03",
+		"loadModelObject:from:" : "MF 7/14/2015 15:30",
+		"loadModelObjectsOf:" : "MF 7/14/2015 15:30",
+		"persist:from:" : "MF 7/7/2015 10:42",
+		"update:with:from:" : "MF 7/7/2015 14:33" } }

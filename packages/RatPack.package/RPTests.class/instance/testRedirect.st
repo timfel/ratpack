@@ -1,5 +1,6 @@
-tests
+test - routing
 testRedirect
+
 	| result |
 	result := RPTestHelper get: '/redirect' on: app.
 	self assert: (result contents contents includesSubString: 'moved to').
