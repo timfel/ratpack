@@ -2,16 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createTableFor:" : "MF 7/8/2015 21:41",
-		"deleteObject:from:" : "MF 7/8/2015 21:45",
-		"dropTableFor:" : "LB 7/12/2015 23:54",
-		"getNextIdForModel:" : "MF 7/8/2015 21:59",
-		"idDictionary" : "MF 5/31/2015 10:53",
-		"idDictionary:" : "MF 5/31/2015 10:50",
-		"loadModelObject:from:" : "LB 7/15/2015 19:22",
-		"loadModelObjectHelperFrom:" : "LB 7/31/2015 14:31",
-		"loadModelObjectsOf:" : "LB 7/15/2015 17:11",
-		"modelDictionary" : "MF 5/31/2015 11:40",
-		"modelDictionary:" : "MF 5/31/2015 11:40",
-		"persist:from:" : "LB 7/15/2015 18:43",
-		"update:with:from:" : "MF 7/14/2015 16:48" } }
+		"connectTo:on:at:as:with:" : "MF 7/4/2015 15:59",
+		"createTableFor:" : "MF 7/7/2015 10:03",
+		"deleteObject:from:" : "MF 7/4/2015 15:39",
+		"dropTableFor:" : "MF 7/7/2015 10:03",
+		"loadModelObject:from:" : "MF 7/14/2015 15:30",
+		"loadModelObjectsOf:" : "MF 7/14/2015 15:30",
+		"persist:from:" : "MF 7/7/2015 10:42",
+		"update:with:from:" : "MF 7/7/2015 14:33" } }

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"modelDictinary",
-		"idDictionary" ],
+		 ],
 	"name" : "RPDatabase",
 	"pools" : [
 		 ],
-	"super" : "RPDatabaseAdapter",
+	"super" : "Object",
 	"type" : "normal" }

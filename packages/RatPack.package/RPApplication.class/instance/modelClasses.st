@@ -1,4 +1,4 @@
 accessing
 modelClasses
 	
-	^modelClasses ifNil: [ modelClasses := IdentityDictionary new]
+	^ modelClasses ifNil: [ modelClasses := IdentityDictionary new]

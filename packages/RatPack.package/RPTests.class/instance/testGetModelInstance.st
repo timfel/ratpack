@@ -5,7 +5,7 @@ testGetModelInstance
       app registerModel: RPTestModel.
       url := '/api/', (RPTestModel name).
 	testJson := RPTestHelper getExampleJson.
-      RPTestHelper put: url on: app content: testJson.
+      RPTestHelper post: url on: app content: testJson.
       idUrl := url, '/1'.
       result := RPTestHelper get: idUrl on: app.
       self assert:  ((result contents contents) includesSubString: testJson).

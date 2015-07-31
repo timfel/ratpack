@@ -1,4 +1,4 @@
 object handling
-loadModelObjectsOf: anRPModelClass
+loadModelObjectsOf: aRPModelClass
 
-	^ (self loadModelObjectHelperFrom: anRPModelClass) asOrderedCollection
+	self subclassResponsibility 

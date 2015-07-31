@@ -1,4 +1,4 @@
-object handling
+endpoint
 getRegisteredObjectsFromRequest: aRPModelname
  
       | modelObjects string aRPModelClass |

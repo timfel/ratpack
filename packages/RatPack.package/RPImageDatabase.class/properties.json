@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "RPDatabaseAdapter",
+		"modelDictinary",
+		"idDictionary" ],
+	"name" : "RPImageDatabase",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "RPDatabase",
 	"type" : "normal" }

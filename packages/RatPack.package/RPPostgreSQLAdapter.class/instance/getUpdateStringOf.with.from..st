@@ -1,13 +1,10 @@
 sql helpers
-getUpdateStringOf: anObject with: anId from: aRPModelClass
+getUpdateStringOf: anObject with: anId from: anRPModelClass
 
 	| updatedValues |
-	updatedValues := 	(aRPModelClass dataTypes keys 
-							collect: [:attribute | attribute, ' = ', (self getSQLValueOf: anObject 
-																	ofModel: aRPModelClass 
-																	from: attribute)]).
+	updatedValues := self getUpdatedValues: anObject from: anRPModelClass.
 
-	^ ('UPDATE ', (aRPModelClass tableName), 
+	^ ('UPDATE ', (anRPModelClass tableName), 
 			' SET ', (updatedValues joinSeparatedBy: ', '),
-			' WHERE ',  (aRPModelClass idColumnName),  ' = ', anId)
+			' WHERE ',  (anRPModelClass idColumnName),  ' = ', anId)
 	

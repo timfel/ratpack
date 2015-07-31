@@ -1,7 +1,6 @@
 validation
 validateRefClass
 
-	self dataTypes keys do: [:each | 
-				(self checkRefClassContainsInstanceVariable: each) 
-					ifFalse: [^ false]].
-	^ true
+	^ self dataTypes keys detect: [:variable |
+			(self checkRefClassContainsInstanceVariable: variable) not] 
+			ifNone: [true].

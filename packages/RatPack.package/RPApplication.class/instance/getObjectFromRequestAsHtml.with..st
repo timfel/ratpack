@@ -1,4 +1,4 @@
-object handling
+endpoint
 getObjectFromRequestAsHtml: aRPModelname with: anID
 
       | modelObject aHtmlString aRPModelClass |

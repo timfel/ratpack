@@ -1,16 +1,8 @@
 model handling
-addModelRouteFor: aRPModelClass
+addModelRouteFor: anRPModelClass
 
-	"#(#get: #post: #put: #delete:)"
-	| apiUrl htmlUrl |
-	apiUrl := '/api/', (aRPModelClass name).
-	htmlUrl := '/html/', (aRPModelClass name).
+	self addDefaultGetRoutesFor: anRPModelClass.
+	self addDefaultDeleteRoutesFor: anRPModelClass.
+	self addDefaultPostRoutesFor: anRPModelClass.	
+	self addDefaultPutRoutesFor: anRPModelClass
 	
-	(self routesFor: #get:) add: ((apiUrl, '/([^/]+)') -> #'getObjectFromRequest:with:').
-	(self routesFor: #get:) add: (apiUrl -> #'getRegisteredObjectsFromRequest:').
-	(self routesFor: #put:) add: (apiUrl -> #'putFromRequest:').
-	(self routesFor: #delete:) add: ((apiUrl , '/([^/]+)') -> #'deleteFromRequest:with:').
-	(self routesFor: #put:) add: ((apiUrl, '/([^/]+)') -> #'updateFromRequest:with:').
-
-	(self routesFor: #get:) add: ((htmlUrl, '/([^/]+)') -> #'getObjectFromRequestAsHtml:with:').
-	(self routesFor: #get:) add: (htmlUrl -> #'getRegisteredModelsFromRequestAsHtml:')

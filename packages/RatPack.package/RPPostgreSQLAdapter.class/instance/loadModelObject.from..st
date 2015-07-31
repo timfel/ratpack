@@ -1,12 +1,12 @@
 object handling
 loadModelObject: anId from: anRPModelClass
 
-	| response objectDictionaries |
-	response := self executeSQLStatement: ('SELECT * FROM ', (anRPModelClass tableName), ' WHERE ', (anRPModelClass idColumnName),  '=', anId).
+	| response objectDictionaries statement |
+	statement := 'SELECT * FROM ', (anRPModelClass tableName), ' WHERE ', (anRPModelClass idColumnName),  '=', anId.
+	response := self executeSQLStatement: statement.
 	objectDictionaries :=  self transformToCollection: response. 
+	objectDictionaries ifEmpty: [^ self notify: 'Object not found!'].
 
-	^ (objectDictionaries collect: [:each | anRPModelClass constructModel: each])
-			ifEmpty: [self notify: 'Object not found!'];
-			first 
-	
+	^ anRPModelClass constructModel: (objectDictionaries first)
+			
 	

@@ -1,4 +1,4 @@
-model handling
+endpoint
 getRegisteredModelsFromRequestAsHtml: aRPModelname
  
       | aRPModelClass aHtmlString subStrings |

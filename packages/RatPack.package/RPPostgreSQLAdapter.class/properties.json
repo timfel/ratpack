@@ -11,5 +11,5 @@
 	"name" : "RPPostgreSQLAdapter",
 	"pools" : [
 		 ],
-	"super" : "RPDatabaseAdapter",
+	"super" : "RPDatabase",
 	"type" : "normal" }

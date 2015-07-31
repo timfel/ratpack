@@ -1,4 +1,4 @@
 accessing
 database
 
-	^ database ifNil: [database := RPDatabase new ]
+	^ database ifNil: [database := RPImageDatabase new]

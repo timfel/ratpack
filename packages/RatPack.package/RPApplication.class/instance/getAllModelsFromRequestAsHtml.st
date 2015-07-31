@@ -1,4 +1,4 @@
-object handling
+endpoint
 getAllModelsFromRequestAsHtml
 	
 	 ^ self sendHtml: ('<!DOCTYPE html><html><head></head><body><h3>Models:</h3>', 
