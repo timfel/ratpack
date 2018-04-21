@@ -18,8 +18,8 @@ addons:
     packages:
     # UUIDPlugin
     - libuuid1:i386
-  postgresql: "9.4"
+  postgresql: "9.5"
 
 before_install:
    - psql -c "CREATE DATABASE squeakdb;" -U postgres
-   - psql -c "ALTER USER postgres WITH PASSWORD 'secret';" -U postgres
+   - psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
