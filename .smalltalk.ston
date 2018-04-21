@@ -5,7 +5,9 @@ SmalltalkCISpec {
       #platforms : [ #squeak ],
       #directory : 'packages',
       #load : [ 'TravisCI' ],
-      #testing: [ 'RPTests' ]
+      #testing: {
+        #packages: [ 'RatPack.*' ]
+      }
     }
   ]
 }
