@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"app",
-		"strictApp" ],
-	"name" : "RPTests",
+		 ],
+	"name" : "RPStrictDecodingTestApp",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "RPTestApp",
 	"type" : "normal" }

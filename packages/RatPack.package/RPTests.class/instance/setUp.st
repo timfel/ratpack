@@ -2,4 +2,7 @@ running
 setUp
 
 	app := RPTestApp new.
-	app disableLogging
+	app disableLogging.
+	
+	strictApp := RPStrictDecodingTestApp new.
+	strictApp disableLogging.

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"app",
-		"strictApp" ],
-	"name" : "RPTests",
+		 ],
+	"name" : "RPMockDecoder",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Object",
 	"type" : "normal" }

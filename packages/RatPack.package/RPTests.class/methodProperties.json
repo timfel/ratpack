@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "LB 6/21/2015 20:52",
+		"setUp" : "re 5/8/2018 18:23",
 		"tearDown" : "mm 7/14/2015 21:38",
 		"testAddObject" : "LB 7/15/2015 20:06",
 		"testConvertModelClassToSQLString" : "LB 7/12/2015 21:31",
+		"testCorrectContentDecoding" : "re 5/8/2018 17:40",
 		"testCreateTableWithExternalDatabase" : "LB 7/12/2015 22:27",
 		"testDeleteObject" : "MF 7/14/2015 15:30",
 		"testDeleteObjectOnExternalDatabase" : "MF 7/14/2015 15:30",
@@ -16,6 +17,8 @@
 		"testGetModelInstance" : "LB 7/31/2015 15:33",
 		"testIndex" : "LB 5/9/2015 11:39",
 		"testInsertObjectOnExternalDatabase" : "MF 7/14/2015 16:11",
+		"testInvalidContentDecoding" : "re 5/8/2018 18:00",
+		"testJsonDecoder" : "re 5/8/2018 11:27",
 		"testLoadObjectsOnExternalDatabase" : "MF 7/14/2015 15:30",
 		"testNotFound" : "RS 5/18/2015 09:46",
 		"testObjectIndexing" : "LB 7/15/2015 19:48",
@@ -24,6 +27,8 @@
 		"testRegisterModelClass" : "MF 7/7/2015 09:48",
 		"testRemoveModelClass" : "MF 7/7/2015 10:24",
 		"testSimpleJSON" : "LB 5/20/2015 13:34",
+		"testStrictInvalidContentDecoding" : "re 5/8/2018 18:30",
+		"testStrictUnknownContentTypeDecoding" : "re 5/8/2018 18:29",
 		"testTestModelCreateDefaultObject" : "pk 7/12/2015 22:09",
 		"testTestModelCreateJsonFor" : "LB 7/13/2015 14:53",
 		"testTestModelCreateJsonForInvalidObject" : "mm 7/14/2015 19:53",
@@ -33,5 +38,6 @@
 		"testTestModelValidateJsonIncorrect" : "LB 7/13/2015 13:22",
 		"testTestModelValidateJsonWithToManyAttributes" : "MF 7/7/2015 17:53",
 		"testTestModelValidateRefClass" : "MF 7/6/2015 18:42",
+		"testUnknownContentTypeDecoding" : "re 5/8/2018 17:59",
 		"testUpdateObjectOnExternalDatabase" : "MF 7/14/2015 16:10",
 		"testUpdateSingleObject" : "MF 7/14/2015 17:44" } }
