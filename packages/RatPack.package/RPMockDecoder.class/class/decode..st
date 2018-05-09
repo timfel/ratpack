@@ -3,4 +3,4 @@ decode: anEncodedObject
 
 	anEncodedObject = 'invalid'
 		ifTrue: [^ self error: 'Invalid content']
-		ifFalse: [^ Dictionary newFrom: {'a' -> 5. 'b' -> 7}].
+		ifFalse: [^ self fixedAnswer].

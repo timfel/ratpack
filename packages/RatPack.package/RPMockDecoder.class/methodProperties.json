@@ -1,5 +1,6 @@
 {
 	"class" : {
-		"decode:" : "re 5/8/2018 18:00" },
+		"decode:" : "re 5/9/2018 15:02",
+		"fixedAnswer" : "re 5/9/2018 15:03" },
 	"instance" : {
 		 } }
