@@ -3,8 +3,9 @@
 		"appName" : "mm 7/14/2015 21:38",
 		"contentDecoders" : "re 5/8/2018 17:55" },
 	"instance" : {
-		"handleRequestForIndex" : "LB 5/9/2015 11:34",
+		"handleRequestForIndex" : "re 5/9/2018 13:16",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSimpleJSON" : "MF 5/16/2015 19:13",
-		"initialize" : "MF 5/31/2015 13:54",
+		"indexHandlerCalled" : "re 5/9/2018 13:04",
+		"initialize" : "re 5/9/2018 13:03",
 		"raiseError" : "tfel 8/29/2012 12:15" } }

@@ -1,4 +1,6 @@
 as yet unclassified
 initialize 
 
-	super initialize
+	super initialize.
+	
+	indexHandlerCalled := false.

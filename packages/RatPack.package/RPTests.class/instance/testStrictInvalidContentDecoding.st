@@ -1,14 +1,16 @@
 test - decoding
 testStrictInvalidContentDecoding
 	
-	| request response |
+	| response |
 	
-	request := RPMockRequest method: 'PUT' rawUrl: 'url' headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: 'invalid'.
-	response := strictApp processRequest: request.
-	self assert: (strictApp parsedRequestContents) equals: nil.
-	self assert: response body equals: strictApp class badRequestPage.
+	app settings forceCorrectContentDecoding: true.
 	
-	request := RPMockRequest method: 'POST' rawUrl: 'url' headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: 'invalid'.
-	response := strictApp processRequest: request.
-	self assert: (strictApp parsedRequestContents) equals: nil.
-	self assert: response body equals: strictApp class badRequestPage.
+	response := RPTestHelper put: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: 'invalid'.
+	self assert: (app parsedRequestContents) equals: nil.
+	self assert: response body equals: app class badRequestPage.
+	self assert: app indexHandlerCalled equals: false.
+	
+	response := RPTestHelper post: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/contenttype'}) content: 'invalid'.
+	self assert: (app parsedRequestContents) equals: nil.
+	self assert: response body equals: app class badRequestPage.
+	self assert: app indexHandlerCalled equals: false.

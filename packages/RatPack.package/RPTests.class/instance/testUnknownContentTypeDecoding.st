@@ -1,12 +1,8 @@
 test - decoding
 testUnknownContentTypeDecoding
 	
-	| request |
-	
-	request := RPMockRequest method: 'PUT' rawUrl: 'url' headers: (Dictionary newFrom: {'Content-Type' -> 'test/unknown'}) content: ''.
-	app processRequest: request.
+	RPTestHelper put: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/unknown'}) content: ''.
 	self assert: (app parsedRequestContents) equals: nil.
 	
-	request := RPMockRequest method: 'POST' rawUrl: 'url' headers: (Dictionary newFrom: {'Content-Type' -> 'test/unknown'}) content: ''.
-	app processRequest: request.
+	RPTestHelper post: '/index' on: app headers: (Dictionary newFrom: {'Content-Type' -> 'test/unknown'}) content: ''.
 	self assert: (app parsedRequestContents) equals: nil.

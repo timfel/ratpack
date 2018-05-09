@@ -9,4 +9,4 @@ parseRequestContent: aHttpRequest
 		(method = #post) ifTrue: [ self decodeContent: aHttpRequest rawPostContents type: aHttpRequest contentType. ].
 	] on: Error do: [ :sig |
 		self parsedRequestContents: nil.
-		self class forceCorrectContentDecoding ifTrue: [ ^ sig pass ] ifFalse: [ ^ sig return ] ].
+		self settings forceCorrectContentDecoding ifTrue: [ ^ sig pass ] ifFalse: [ ^ sig return ] ].
