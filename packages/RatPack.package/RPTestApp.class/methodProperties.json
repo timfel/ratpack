@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"appName" : "mm 7/14/2015 21:38" },
+		"appName" : "mm 7/14/2015 21:38",
+		"contentDecoders" : "re 5/8/2018 17:55" },
 	"instance" : {
-		"handleRequestForIndex" : "LB 5/9/2015 11:34",
+		"handleRequestForIndex" : "re 5/9/2018 13:16",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSimpleJSON" : "jm 5/9/2018 13:09",
 		"initialize" : "MF 5/31/2015 13:54",
