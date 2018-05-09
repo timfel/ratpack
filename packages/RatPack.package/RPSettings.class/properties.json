@@ -1,14 +1,14 @@
 {
-	"category" : "RatPack-Testing",
+	"category" : "RatPack",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"indexHandlerCalled" ],
-	"name" : "RPTestApp",
+		"forceCorrectContentDecoding" ],
+	"name" : "RPSettings",
 	"pools" : [
 		 ],
-	"super" : "RPApplication",
+	"super" : "Object",
 	"type" : "normal" }

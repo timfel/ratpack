@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"indexHandlerCalled" ],
-	"name" : "RPTestApp",
+		 ],
+	"name" : "RPMockDecoder",
 	"pools" : [
 		 ],
-	"super" : "RPApplication",
+	"super" : "Object",
 	"type" : "normal" }
