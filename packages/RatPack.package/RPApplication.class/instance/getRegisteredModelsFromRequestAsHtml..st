@@ -11,4 +11,4 @@ getRegisteredModelsFromRequestAsHtml: aRPModelname
 						each asJsonString]) joinSeparatedBy: ','),
 					'}}<br><br><b>Objects:</b>',
 					(self getRegisteredObjectsFromRequestAsHtml: aRPModelname).
-	^ self sendHtml: aHtmlString with: 'model/html'
+	^ self sendHtml: aHtmlString

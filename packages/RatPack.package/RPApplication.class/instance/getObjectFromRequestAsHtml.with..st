@@ -6,4 +6,4 @@ getObjectFromRequestAsHtml: aRPModelname with: anID
 	aRPModelClass := self getRegisteredModel: aRPModelname.
 	[modelObject := self database loadModelObject: anID from: aRPModelClass] on: Warning do: [
 		^ 'Object not found!'].
-       ^ self sendHtml: (aHtmlString, (aRPModelClass createHtmlTemplateFor: (modelObject object)), '</body></html>') with: 'model/html'
+       ^ self sendHtml: (aHtmlString, (aRPModelClass createHtmlTemplateFor: (modelObject object)), '</body></html>')

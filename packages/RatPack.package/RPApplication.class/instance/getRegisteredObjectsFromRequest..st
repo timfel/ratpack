@@ -6,4 +6,4 @@ getRegisteredObjectsFromRequest: aRPModelname
       modelObjects := self database loadModelObjectsOf: aRPModelClass.  
 	string := '{"data":[', ((modelObjects collect: [:each |
 		each asJson]) joinSeparatedBy: ','), ']}'.
-  	^ self sendJson: string with: 'model/api'
+  	^ self sendJson: string
