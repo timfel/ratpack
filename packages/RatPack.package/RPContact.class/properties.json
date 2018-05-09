@@ -1,0 +1,16 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"firstName",
+		"lastName",
+		"email" ],
+	"name" : "RPContact",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

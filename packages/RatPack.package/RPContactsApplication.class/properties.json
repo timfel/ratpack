@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPContactsApplication",
+	"pools" : [
+		 ],
+	"super" : "RPApplication",
+	"type" : "normal" }

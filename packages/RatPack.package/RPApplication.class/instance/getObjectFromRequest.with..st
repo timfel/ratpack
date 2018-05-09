@@ -6,4 +6,4 @@ getObjectFromRequest: aRPModelname with: anID
 	[modelObject := self database loadModelObject: anID from: aRPModelClass] 
 		on: Warning do: [^ self objectNotFound].
  
-       ^ self sendJson: (modelObject asJson) with: 'model/api'
+       ^ self sendJson: (modelObject asJson)
