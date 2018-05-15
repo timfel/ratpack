@@ -18,7 +18,7 @@
 		"testIndex" : "LB 5/9/2015 11:39",
 		"testInsertObjectOnExternalDatabase" : "MF 7/14/2015 16:11",
 		"testInvalidContentDecoding" : "re 5/9/2018 13:17",
-		"testJsonDecoder" : "re 5/8/2018 11:27",
+		"testJsonDecoder" : "re 5/15/2018 11:15",
 		"testLoadObjectsOnExternalDatabase" : "MF 7/14/2015 15:30",
 		"testNotFound" : "RS 5/18/2015 09:46",
 		"testObjectIndexing" : "LB 7/15/2015 19:48",
