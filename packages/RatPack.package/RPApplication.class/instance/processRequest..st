@@ -3,8 +3,8 @@ processRequest: aHttpRequest
 
 	| response |
 	self
-		threadLocal: self class requestKey put: aHttpRequest;
-		threadLocal: self class responseKey put: (HttpResponse fromString: '').
+		request: aHttpRequest;
+		response: (HttpResponse fromString: '').
 	
 	[ self parseRequestContent: aHttpRequest ] on: Error do: [:e | ^ self badRequest ].
 	
