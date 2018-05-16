@@ -7,3 +7,4 @@ writeObject: anObject from: anRPModelClass withId: anId
 	(self modelDictionary at: anRPModelClass name ) 
 			at: (anId asString asSymbol)
 			put: entry.
+	
