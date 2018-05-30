@@ -6,7 +6,6 @@ os:
 
 env:
   global:
-    - BASELINE=RatPack
     - EXCLUDE_CATEGORIES="Cryptography,PostgresV2"
 
 smalltalk:
@@ -21,5 +20,5 @@ addons:
   postgresql: "9.5"
 
 before_install:
-   - psql -c "CREATE DATABASE squeakdb;" -U postgres
-   - psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
+  - psql -c "CREATE DATABASE squeakdb;" -U postgres
+- psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
