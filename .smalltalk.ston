@@ -8,6 +8,9 @@ SmalltalkCISpec {
     }
   ],
   #testing: {
-    #packages: [ 'RatPack.*' ]
+    #packages: [ 'RatPack.*' ],
+    #coverage : {
+      #categories: [ 'RatPack-*' ]
+    }
   }
 }
