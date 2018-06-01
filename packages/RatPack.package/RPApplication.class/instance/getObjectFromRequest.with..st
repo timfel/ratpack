@@ -1,7 +1,7 @@
 object handling
 getObjectFromRequest: aRPModelname with: anID
 
-    | modelObject aRPModelClass |
+	| modelObject aRPModelClass |
 
 	aRPModelClass := self getRegisteredModel: aRPModelname.
 	[ modelObject := self database loadModelObject: (anID asNumber) from: aRPModelClass] 

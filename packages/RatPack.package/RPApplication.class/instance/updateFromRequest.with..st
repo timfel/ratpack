@@ -1,7 +1,7 @@
 object handling
 updateFromRequest: aRPModelname with: anId
  
-    | updatedObject jsonString aRPModelClass |
+	| updatedObject jsonString aRPModelClass |
 
 	aRPModelClass := self getRegisteredModel: aRPModelname.
 	jsonString := self request rawPutContents.
