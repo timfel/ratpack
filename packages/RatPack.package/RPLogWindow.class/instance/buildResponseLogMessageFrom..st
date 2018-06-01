@@ -1,4 +1,4 @@
-as yet unclassified
+private-interaction
 buildResponseLogMessageFrom: aHttpResponse 
 
 	^ aHttpResponse status asString

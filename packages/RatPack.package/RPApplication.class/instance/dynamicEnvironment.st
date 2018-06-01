@@ -1,4 +1,4 @@
 private
 dynamicEnvironment
 
-	^ dynamicEnv at: Processor activeProcess ifAbsentPut: [IdentityDictionary new]
+	^ dynamicEnv at: Processor activeProcess ifAbsentPut: [ RPDynamicEnv new. ]

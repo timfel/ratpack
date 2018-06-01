@@ -8,4 +8,5 @@ initialize
 	self onRequestDo: [:httpRequest | self processRequest: httpRequest];
 		initializeDynamicVariables;
 		initializeRoutes;
+		initializePragmaMiddleware;
 		initializeLogging.

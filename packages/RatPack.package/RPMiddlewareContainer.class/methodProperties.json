@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"newWithGlobalSymbols:andKey:" : "lj 5/30/2018 11:51" },
+	"instance" : {
+		"atHandler:" : "lj 5/23/2018 18:09",
+		"createInstanceFromSymbol:" : "lj 5/23/2018 13:49",
+		"globalMiddleware" : "lj 5/23/2018 14:59",
+		"globalMiddleware:" : "lj 5/23/2018 14:59",
+		"globalMiddlewareKey" : "lj 5/23/2018 18:37",
+		"globalMiddlewareKey:" : "lj 5/23/2018 18:37",
+		"handlerMapping" : "lj 5/23/2018 13:53",
+		"includeGlobalMiddleware:" : "lj 5/30/2018 14:47",
+		"instanceForName:" : "lj 5/24/2018 00:05",
+		"instancesForHandler:" : "lj 5/24/2018 00:06",
+		"instancesMapping" : "lj 5/23/2018 13:53",
+		"registerMiddleware:forHandler:" : "lj 5/23/2018 21:32" } }
