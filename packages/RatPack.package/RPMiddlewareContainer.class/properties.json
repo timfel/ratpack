@@ -1,0 +1,17 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"handlerMapping",
+		"instanceMapping",
+		"globalMiddleware",
+		"globalMiddlewareKey" ],
+	"name" : "RPMiddlewareContainer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

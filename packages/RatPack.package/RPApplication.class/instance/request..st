@@ -1,4 +1,4 @@
 private
 request: aValue
 	
-	^ self threadLocal: self class requestKey put: aValue
+	^ self dynamicEnvironment request: aValue

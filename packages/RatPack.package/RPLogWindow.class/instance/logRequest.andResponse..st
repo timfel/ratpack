@@ -1,4 +1,4 @@
-as yet unclassified
+private-interaction
 logRequest: aHttpRequest andResponse: aHttpResponse
 
 	| responseMessage requestMessage |

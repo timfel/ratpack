@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack-Testing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RPTestMiddleware",
+	"pools" : [
+		 ],
+	"super" : "RPMiddleware",
+	"type" : "normal" }

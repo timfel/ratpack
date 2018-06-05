@@ -1,4 +1,4 @@
-as yet unclassified
+private-interaction
 buildRequestLogMessageFrom: aHttpRequest 
 
 	| ip time url method |

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"blacklist" : "lj 5/25/2018 19:48" },
+	"instance" : {
+		"incrementPostHookCounter:" : "lj 5/30/2018 14:50",
+		"incrementPreHookCounter:" : "lj 5/30/2018 14:50",
+		"incrementTimer:" : "lj 5/30/2018 14:51",
+		"postHook:" : "lj 5/30/2018 14:52",
+		"preHook:" : "lj 5/30/2018 14:52" } }

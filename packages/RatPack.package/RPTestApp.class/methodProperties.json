@@ -1,11 +1,16 @@
 {
 	"class" : {
 		"appName" : "mm 7/14/2015 21:38",
-		"contentDecoders" : "re 5/8/2018 17:55" },
+		"contentDecoders" : "re 5/8/2018 17:55",
+		"globalMiddleware" : "lj 5/25/2018 15:27" },
 	"instance" : {
+		"blacklistedHandler" : "lj 5/25/2018 19:40",
+		"handleRequestForAutoGlobalMiddleware" : "lj 5/30/2018 14:31",
+		"handleRequestForChainOrder" : "lj 5/25/2018 20:58",
 		"handleRequestForIndex" : "re 5/9/2018 13:16",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSimpleJSON" : "jm 5/9/2018 13:09",
+		"handleRequestForStopped" : "lj 5/25/2018 20:58",
 		"indexHandlerCalled" : "5/15/2018 11:17:27",
 		"initialize" : "MF 5/31/2015 13:54",
 		"raiseError" : "tfel 8/29/2012 12:15" } }
