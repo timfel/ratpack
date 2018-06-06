@@ -1,6 +1,5 @@
 model handling
-addDefaultPutRoutesFor: anRPModelClass
-	
+addDefaultPutRoutesFor: anRPModelClass	
 
 	| apiUrl |
 	apiUrl := self class apiRoutePrefix, (anRPModelClass name).
