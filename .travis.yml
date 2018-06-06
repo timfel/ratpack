@@ -21,4 +21,4 @@ addons:
 
 before_install:
   - psql -c "CREATE DATABASE squeakdb;" -U postgres
-- psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
+  - psql -c "ALTER USER postgres WITH PASSWORD 'bird';" -U postgres
