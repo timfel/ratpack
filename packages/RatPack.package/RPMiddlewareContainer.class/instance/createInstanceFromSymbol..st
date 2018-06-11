@@ -1,5 +1,8 @@
 private-interaction
 createInstanceFromSymbol: aSymbol
 
-	^ ( self class environment classNamed: aSymbol ) new
+	| middlewareInstance |
+	middlewareInstance := ( self class environment classNamed: aSymbol ) new.
+	middlewareInstance settings: self settings.
+	^ middlewareInstance
 	

@@ -1,4 +1,4 @@
 accessing
-response: aValue
+response: aHttpResponse
 	
-	self at: self class responseKey put: aValue.
+	self at: self class responseKey put: aHttpResponse.

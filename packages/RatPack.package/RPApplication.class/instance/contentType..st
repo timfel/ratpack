@@ -1,4 +1,4 @@
 accessing
 contentType: aString
 
-	^ self response contentType: aString
+	^ self dynamicEnvironment contentType: aString

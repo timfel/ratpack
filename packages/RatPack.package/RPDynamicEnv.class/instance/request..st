@@ -1,4 +1,4 @@
 accessing
-request: aValue
+request: aHttpRequest
 	
-	self at: self class requestKey put: aValue.
+	self at: self class requestKey put: aHttpRequest.

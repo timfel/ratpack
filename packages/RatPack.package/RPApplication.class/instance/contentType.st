@@ -1,4 +1,4 @@
 accessing
 contentType
 
-	^ self response contentType
+	^ self dynamicEnvironment contentType

@@ -1,4 +1,4 @@
 accessing
 status
 	
-	^ self response statusCode asInteger
+	^ self dynamicEnvironment status

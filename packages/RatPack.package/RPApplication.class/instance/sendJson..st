@@ -5,4 +5,4 @@ sendJson: aJsonString
 		status: 200;
 		contentType: 'application/json';
 		body:  aJsonString contents;
-		headers: {'server' -> self name}.
+		headersAt: 'server' put: self name.

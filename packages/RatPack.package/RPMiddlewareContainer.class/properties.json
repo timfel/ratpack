@@ -9,7 +9,8 @@
 		"handlerMapping",
 		"instanceMapping",
 		"globalMiddleware",
-		"globalMiddlewareKey" ],
+		"globalMiddlewareKey",
+		"settings" ],
 	"name" : "RPMiddlewareContainer",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
 accessing
 headers
 
-	^ self response fields
+	^ self dynamicEnvironment headers
