@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"application",
-		"handler" ],
+		"application" ],
 	"name" : "RPMiddlewareCallChainHandlerAdapter",
 	"pools" : [
 		 ],

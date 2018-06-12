@@ -5,7 +5,6 @@ route: aHttpRequest
 	
 	| callChain next index debugDynamicEnv |
 	debugDynamicEnv := self dynamicEnvironment.
-	self setRouteHandler.
 	callChain := self createCallChain.
 	
 	index := 0.
