@@ -1,10 +1,10 @@
 routing
 getRegexHandlerFromUrl
 
-	| method methodRoutes regexHandlerAssosiation |
+	| method methodRoutes regexHandlerAssociation |
 	method := self request method asLowercase asSymbol asMutator.
 	methodRoutes := self routesFor: method.
 
-	^ regexHandlerAssosiation := methodRoutes
+	^ regexHandlerAssociation := methodRoutes
 				detect: [:route | (RxMatcher forString: route key) matches: self request url]
-				ifNone: [self request url -> #notFound]
+				ifNone: ['' -> #notFound]

@@ -6,8 +6,10 @@
 	"instance" : {
 		"blacklistedHandler" : "lj 5/25/2018 19:40",
 		"handleRequestForAutoGlobalMiddleware" : "lj 5/30/2018 14:31",
+		"handleRequestForCaptureGroupsWithNumber:andWord:" : "lj 6/13/2018 14:16",
 		"handleRequestForChainOrder" : "lj 5/25/2018 20:58",
-		"handleRequestForIndex" : "re 5/9/2018 13:16",
+		"handleRequestForIndex" : "lj 6/12/2018 17:00",
+		"handleRequestForManySlashes" : "lj 6/13/2018 14:41",
 		"handleRequestForRedirect" : "LB 5/11/2015 11:15",
 		"handleRequestForSetHeaders" : "lj 6/6/2018 15:05",
 		"handleRequestForSimpleJSON" : "jm 5/9/2018 13:09",
