@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"connectTo:on:at:as:with:" : "MF 7/4/2015 15:59",
+		"createTableFor:" : "MF 7/7/2015 10:03",
+		"deleteObject:from:" : "MF 7/4/2015 15:39",
+		"dropTableFor:" : "MF 7/7/2015 10:03",
+		"loadModelObject:from:" : "MF 7/14/2015 15:30",
+		"loadModelObjectsOf:" : "MF 7/14/2015 15:30",
+		"persist:from:" : "MF 7/7/2015 10:42",
+		"update:with:from:" : "MF 7/7/2015 14:33" } }

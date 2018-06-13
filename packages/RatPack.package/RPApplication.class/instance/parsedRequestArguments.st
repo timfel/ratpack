@@ -1,0 +1,4 @@
+accessing
+parsedRequestArguments
+
+	^ self dynamicEnvironment parsedRequestArguments

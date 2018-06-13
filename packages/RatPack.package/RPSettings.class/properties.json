@@ -1,0 +1,15 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"forceCorrectContentDecoding",
+		"globalHeaders" ],
+	"name" : "RPSettings",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

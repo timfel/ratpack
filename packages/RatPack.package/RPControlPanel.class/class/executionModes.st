@@ -1,0 +1,4 @@
+strings
+executionModes
+
+	^ #(deployment debug)

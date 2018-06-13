@@ -1,0 +1,4 @@
+OrderedDictionary {
+	'packages\/BaselineOfRatPack.package' : #SquotCypressCodeSerializer,
+	'packages\/RatPack.package' : #SquotCypressCodeSerializer
+}

@@ -1,0 +1,14 @@
+{
+	"category" : "RatPack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"application" ],
+	"name" : "RPMiddlewareCallChainHandlerAdapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
